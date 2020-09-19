@@ -1,0 +1,2590 @@
+[
+{
+  "model": "contact.formfield",
+  "pk": 1,
+  "fields": {
+    "sort_order": 0,
+    "label": "Name",
+    "field_type": "singleline",
+    "required": true,
+    "choices": "",
+    "default_value": "",
+    "help_text": "Please type your full name",
+    "page": 26
+  }
+},
+{
+  "model": "contact.formfield",
+  "pk": 2,
+  "fields": {
+    "sort_order": 1,
+    "label": "Email",
+    "field_type": "email",
+    "required": true,
+    "choices": "",
+    "default_value": "",
+    "help_text": "Please type your email",
+    "page": 26
+  }
+},
+{
+  "model": "contact.formfield",
+  "pk": 3,
+  "fields": {
+    "sort_order": 2,
+    "label": "Subject of Message",
+    "field_type": "dropdown",
+    "required": true,
+    "choices": "Inquiry, Donation, Feedback",
+    "default_value": "",
+    "help_text": "",
+    "page": 26
+  }
+},
+{
+  "model": "our_partner_areas.partnerarea",
+  "pk": 4,
+  "fields": {
+    "name": "Laro, Lapis at Libro",
+    "description": "<p>Laro, Lapis at Libro (LLL) is a special education school located in St. Mountainview Village, Marikina for kinder to grade 6 students. Two tracks are offered; a functional track primarily for life skills, and an academic track which follows the traditional curriculum and subjects. LLL is a loving community, where every area visit will surely make you smile!</p>",
+    "link": "https://www.facebook.com/LaroLapisLibro/",
+    "image": 8
+  }
+},
+{
+  "model": "our_partner_areas.partnerarea",
+  "pk": 5,
+  "fields": {
+    "name": "Eucharistiana Center",
+    "description": "<p>Eucharistiana Center (EC) is a special education center in Marikina founded by Peter Malinggona. The school caters to students with Down Syndrome, Autism, and Intellectual Disability by teaching them both basic and vocational skills.</p>",
+    "link": "https://www.facebook.com/pages/Eucharistiana-Center-for-Special-Children/474739269244393",
+    "image": 7
+  }
+},
+{
+  "model": "our_partner_areas.partnerarea",
+  "pk": 6,
+  "fields": {
+    "name": "Precious Gem Academy",
+    "description": "<p>Precious Gem Academy (PGA) is an inclusive school that offers Grades 1-10 with a progressive and traditional K-12 curriculum. They have a number of students with and without special needs, with one section per year level. They also offer pre-vocational education for older students to prepare them for employment.</p>",
+    "link": "https://www.facebook.com/pgafairview/",
+    "image": 13
+  }
+},
+{
+  "model": "our_partner_areas.partnerarea",
+  "pk": 7,
+  "fields": {
+    "name": "St. Francis VSA Arts",
+    "description": "<p>St. Francis VSA Arts (SF) is a school that provides education and therapy. While mostly for children who are hard of hearing, the school also has students that have other disabilities and some with none. The principal, Ma\u2019am Becky, has over 25 years of experience with the sector and the school\u2019s therapy is centered around art. These artworks are also sold by the students in weekend bazaars for the end goal of independence and self-sufficiency.</p>",
+    "link": "https://www.facebook.com/sfsvsap/",
+    "image": 16
+  }
+},
+{
+  "model": "our_partner_areas.partnerarea",
+  "pk": 8,
+  "fields": {
+    "name": "Servants of Charity",
+    "description": "<p>Servants of Charity (SOC) or Guanella Center is a privately run school and shelter for people with disabilities. The all-male in-house PWSNs they cater to primarily have Autism, Cerebral Palsy, Intellectual Disability, and Down Syndrome. All in all, SOC has 20 in-house PWSNs and was founded in 2010 to accommodate those who need full-time care.</p>",
+    "link": "https://www.facebook.com/pages/Guanella-Center-Servants-of-Charity/677164222360105",
+    "image": 15
+  }
+},
+{
+  "model": "our_partner_areas.partnerarea",
+  "pk": 9,
+  "fields": {
+    "name": "Sacred Heart Center",
+    "description": "<p>Sacred Heart Center (SH) is a school which was established in 2008 and is currently located in West Fairview, Quezon City. It primarily caters to students with special needs such as Down Syndrome, Cerebral Palsy, ADHD, Autism, and the like. Furthermore, SH provides their students with an avenue to grow and develop their cognitive, verbal, and motor skills through quality education and therapy.</p>",
+    "link": "https://www.facebook.com/dsmpasia/",
+    "image": 14
+  }
+},
+{
+  "model": "our_partner_areas.partnerarea",
+  "pk": 10,
+  "fields": {
+    "name": "Ateneo de Manila",
+    "description": "<p>As an organization that is geared towards building an inclusive society, we empower the special needs sector by collaborating with organizations and holistically forming our members as advocates of the special needs sector.</p>",
+    "link": "https://ateneo.edu/admissions",
+    "image": 17
+  }
+},
+{
+  "model": "our_partner_areas.partnerarea",
+  "pk": 11,
+  "fields": {
+    "name": "UP Diliman",
+    "description": "<p>As an organization that is geared towards building an inclusive society, we empower the special needs sector by collaborating with organizations and holistically forming our members as advocates of the special needs sector.</p>",
+    "link": "https://upd.edu.ph/",
+    "image": 18
+  }
+},
+{
+  "model": "our_partner_areas.partnerareaorderable",
+  "pk": 4,
+  "fields": {
+    "sort_order": 0,
+    "page": 25,
+    "partner": 4
+  }
+},
+{
+  "model": "our_partner_areas.partnerareaorderable",
+  "pk": 5,
+  "fields": {
+    "sort_order": 1,
+    "page": 25,
+    "partner": 5
+  }
+},
+{
+  "model": "our_partner_areas.partnerareaorderable",
+  "pk": 6,
+  "fields": {
+    "sort_order": 2,
+    "page": 25,
+    "partner": 6
+  }
+},
+{
+  "model": "our_partner_areas.partnerareaorderable",
+  "pk": 7,
+  "fields": {
+    "sort_order": 3,
+    "page": 25,
+    "partner": 7
+  }
+},
+{
+  "model": "our_partner_areas.partnerareaorderable",
+  "pk": 8,
+  "fields": {
+    "sort_order": 4,
+    "page": 25,
+    "partner": 8
+  }
+},
+{
+  "model": "our_partner_areas.partnerareaorderable",
+  "pk": 9,
+  "fields": {
+    "sort_order": 5,
+    "page": 25,
+    "partner": 9
+  }
+},
+{
+  "model": "our_partner_areas.partnerareaorderable",
+  "pk": 10,
+  "fields": {
+    "sort_order": 6,
+    "page": 25,
+    "partner": 10
+  }
+},
+{
+  "model": "our_partner_areas.partnerareaorderable",
+  "pk": 11,
+  "fields": {
+    "sort_order": 7,
+    "page": 25,
+    "partner": 11
+  }
+},
+{
+  "model": "related_projects.projectstories",
+  "pk": 1,
+  "fields": {
+    "sort_order": 0,
+    "project": 22,
+    "story": 24
+  }
+},
+{
+  "model": "related_projects.projectstories",
+  "pk": 3,
+  "fields": {
+    "sort_order": 0,
+    "project": 30,
+    "story": 35
+  }
+},
+{
+  "model": "menus.menuitem",
+  "pk": 1,
+  "fields": {
+    "sort_order": 0,
+    "link_title": "About Us",
+    "link_url": "about-us",
+    "link_page": 20,
+    "open_in_new_tab": false,
+    "page": 1
+  }
+},
+{
+  "model": "menus.menuitem",
+  "pk": 2,
+  "fields": {
+    "sort_order": 1,
+    "link_title": "Our Projects",
+    "link_url": "projects",
+    "link_page": 21,
+    "open_in_new_tab": false,
+    "page": 1
+  }
+},
+{
+  "model": "menus.menuitem",
+  "pk": 3,
+  "fields": {
+    "sort_order": 2,
+    "link_title": "Our Partner Areas",
+    "link_url": "partner-areas",
+    "link_page": 25,
+    "open_in_new_tab": false,
+    "page": 1
+  }
+},
+{
+  "model": "menus.menuitem",
+  "pk": 4,
+  "fields": {
+    "sort_order": 3,
+    "link_title": "Our Stories",
+    "link_url": "our-stories",
+    "link_page": 23,
+    "open_in_new_tab": false,
+    "page": 1
+  }
+},
+{
+  "model": "menus.menu",
+  "pk": 1,
+  "fields": {
+    "title": "Navigation Bar",
+    "slug": "navigation-bar"
+  }
+},
+{
+  "model": "wagtailsearch.query",
+  "pk": 1,
+  "fields": {
+    "query_string": "mia"
+  }
+},
+{
+  "model": "wagtailsearch.query",
+  "pk": 2,
+  "fields": {
+    "query_string": "jaime"
+  }
+},
+{
+  "model": "wagtailsearch.query",
+  "pk": 3,
+  "fields": {
+    "query_string": "test"
+  }
+},
+{
+  "model": "wagtailsearch.querydailyhits",
+  "pk": 1,
+  "fields": {
+    "query": 1,
+    "date": "2020-06-28",
+    "hits": 1
+  }
+},
+{
+  "model": "wagtailsearch.querydailyhits",
+  "pk": 2,
+  "fields": {
+    "query": 2,
+    "date": "2020-06-28",
+    "hits": 1
+  }
+},
+{
+  "model": "wagtailsearch.querydailyhits",
+  "pk": 3,
+  "fields": {
+    "query": 3,
+    "date": "2020-07-20",
+    "hits": 1
+  }
+},
+{
+  "model": "wagtailcore.site",
+  "pk": 1,
+  "fields": {
+    "hostname": "localhost",
+    "port": 80,
+    "site_name": null,
+    "root_page": 39,
+    "is_default_site": true
+  }
+},
+{
+  "model": "wagtailcore.collection",
+  "pk": 1,
+  "fields": {
+    "path": "0001",
+    "depth": 1,
+    "numchild": 0,
+    "name": "Root"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "Moderators",
+    "permissions": [
+      [
+        "access_admin",
+        "wagtailadmin",
+        "admin"
+      ],
+      [
+        "add_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "change_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "delete_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "add_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "change_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "delete_image",
+        "wagtailimages",
+        "image"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "Editors",
+    "permissions": [
+      [
+        "access_admin",
+        "wagtailadmin",
+        "admin"
+      ],
+      [
+        "add_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "change_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "delete_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "add_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "change_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "delete_image",
+        "wagtailimages",
+        "image"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$180000$n5DcQ1lF9Lpm$6dbWV4t9960kSsiGoQwFg6mM0e48bb8qHPBKIcS3bM4=",
+    "last_login": "2020-06-30T03:16:56.457Z",
+    "is_superuser": true,
+    "username": "jaime",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-06-28T03:12:19.648Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$y3fCvkS0gnZr$wcyMCp4TT7eeUoBDWZrujaqDZ9TfbWuT6Ywbc6xKkBw=",
+    "last_login": "2020-07-20T15:04:40.660Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-07-15T11:12:47.826Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 20,
+  "fields": {
+    "page": 20,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T12:40:42.700Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 21,
+  "fields": {
+    "page": 20,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T12:41:03.059Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 22,
+  "fields": {
+    "page": 20,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T12:44:57.934Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 23,
+  "fields": {
+    "page": 21,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T12:46:50.903Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 24,
+  "fields": {
+    "page": 22,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T12:48:35.277Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 25,
+  "fields": {
+    "page": 23,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T12:49:31.591Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 26,
+  "fields": {
+    "page": 24,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T12:57:51.223Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 27,
+  "fields": {
+    "page": 21,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T12:58:08.803Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 28,
+  "fields": {
+    "page": 25,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T13:00:33.412Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 29,
+  "fields": {
+    "page": 25,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T13:13:29.883Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 30,
+  "fields": {
+    "page": 20,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T13:52:36.219Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 31,
+  "fields": {
+    "page": 26,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T13:59:01.645Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 32,
+  "fields": {
+    "page": 25,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T14:59:42.626Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 33,
+  "fields": {
+    "page": 22,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T15:01:34.015Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 34,
+  "fields": {
+    "page": 27,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T15:03:01.904Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 35,
+  "fields": {
+    "page": 28,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T15:04:41.155Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 36,
+  "fields": {
+    "page": 29,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T15:05:17.557Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 37,
+  "fields": {
+    "page": 30,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T15:06:31.528Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 38,
+  "fields": {
+    "page": 31,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T15:07:21.501Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 39,
+  "fields": {
+    "page": 32,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T15:08:20.571Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 40,
+  "fields": {
+    "page": 33,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T15:09:09.975Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 41,
+  "fields": {
+    "page": 34,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T15:12:03.645Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 42,
+  "fields": {
+    "page": 35,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T15:12:52.725Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 43,
+  "fields": {
+    "page": 36,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T15:13:32.367Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 44,
+  "fields": {
+    "page": 37,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T15:14:50.041Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 45,
+  "fields": {
+    "page": 38,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T15:15:30.426Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 46,
+  "fields": {
+    "page": 39,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T15:17:19.131Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 47,
+  "fields": {
+    "page": 39,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-10T15:17:28.221Z",
+    "user": [
+      "jaime"
+    ],
+    "content_json": "",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 48,
+  "fields": {
+    "page": 39,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T12:12:36.373Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 39, \"path\": \"000100010006\", \"depth\": 3, \"numchild\": 0, \"title\": \"HOME\", \"draft_title\": \"HOME\", \"slug\": \"home-main\", \"content_type\": 5, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/home/\", \"owner\": 1, \"seo_title\": \"Home\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T15:17:28.252Z\", \"last_published_at\": \"2020-07-10T15:17:28.252Z\", \"latest_revision_created_at\": \"2020-07-10T15:17:28.221Z\", \"live_revision\": 47, \"carousel\": \"[{\\\"type\\\": \\\"Images\\\", \\\"value\\\": 9, \\\"id\\\": \\\"4d95d89b-ff6c-42f2-a046-d36bf09e8623\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 10, \\\"id\\\": \\\"1b245b4f-8c19-451b-9985-d3f7ebc8cc51\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 11, \\\"id\\\": \\\"f779fa17-daa0-42a7-9b19-06b316cb8f8f\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 12, \\\"id\\\": \\\"743c6330-1fd3-40bf-a321-978476cefe31\\\"}]\", \"header\": \"Always for a more inclusive society\", \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Ateneo Special Education Society (SPEED) is a Sector-based Cluster of the Ateneo de Manila University. As a student-run organization, we aim to provide an inclusive society for persons with special needs, as well as embrace their value as human beings through our projects and by partnering with various institutions.</p>\\\", \\\"id\\\": \\\"fb4bb189-0d92-4234-b149-378da0b736a5\\\"}]\", \"mission_desc\": \"[{\\\"type\\\": \\\"MissionDescription\\\", \\\"value\\\": \\\"<p>As an organization that is geared towards building an inclusive society, we empower the special needs sector by collaborating with organizations and holistically forming our members as advocates of the special needs sector.</p>\\\", \\\"id\\\": \\\"eb179f6a-3474-4c02-9ef6-0ffaa2f6b311\\\"}]\", \"vision_desc\": \"[{\\\"type\\\": \\\"VisionDescription\\\", \\\"value\\\": \\\"<p>Our organization envisions an inclusive Philippines that provides persons with special needs an equitable means to live a quality life and an avenue to embrace their value as human beings.</p>\\\", \\\"id\\\": \\\"17919cd1-bebb-4826-809d-9ae464380d2e\\\"}]\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 49,
+  "fields": {
+    "page": 39,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T12:12:50.465Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 39, \"path\": \"000100010006\", \"depth\": 3, \"numchild\": 0, \"title\": \"HOME\", \"draft_title\": \"HOME\", \"slug\": \"home-main\", \"content_type\": 5, \"live\": true, \"has_unpublished_changes\": true, \"url_path\": \"/home/home-main/\", \"owner\": 1, \"seo_title\": \"Home\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T15:17:28.252Z\", \"last_published_at\": \"2020-07-10T15:17:28.252Z\", \"latest_revision_created_at\": \"2020-07-31T12:12:36.373Z\", \"live_revision\": 47, \"carousel\": \"[{\\\"type\\\": \\\"Images\\\", \\\"value\\\": 9, \\\"id\\\": \\\"4d95d89b-ff6c-42f2-a046-d36bf09e8623\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 10, \\\"id\\\": \\\"1b245b4f-8c19-451b-9985-d3f7ebc8cc51\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 11, \\\"id\\\": \\\"f779fa17-daa0-42a7-9b19-06b316cb8f8f\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 12, \\\"id\\\": \\\"743c6330-1fd3-40bf-a321-978476cefe31\\\"}]\", \"header\": \"Always for a more inclusive society\", \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Ateneo Special Education Society (SPEED) is a Sector-based Cluster of the Ateneo de Manila University. As a student-run organization, we aim to provide an inclusive society for persons with special needs, as well as embrace their value as human beings through our projects and by partnering with various institutions.</p>\\\", \\\"id\\\": \\\"fb4bb189-0d92-4234-b149-378da0b736a5\\\"}]\", \"mission_desc\": \"[{\\\"type\\\": \\\"MissionDescription\\\", \\\"value\\\": \\\"<p>As an organization that is geared towards building an inclusive society, we empower the special needs sector by collaborating with organizations and holistically forming our members as advocates of the special needs sector.</p>\\\", \\\"id\\\": \\\"eb179f6a-3474-4c02-9ef6-0ffaa2f6b311\\\"}]\", \"vision_desc\": \"[{\\\"type\\\": \\\"VisionDescription\\\", \\\"value\\\": \\\"<p>Our organization envisions an inclusive Philippines that provides persons with special needs an equitable means to live a quality life and an avenue to embrace their value as human beings.</p>\\\", \\\"id\\\": \\\"17919cd1-bebb-4826-809d-9ae464380d2e\\\"}]\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 52,
+  "fields": {
+    "page": 39,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T12:45:37.242Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 39, \"path\": \"00010002\", \"depth\": 2, \"numchild\": 5, \"title\": \"HOME\", \"draft_title\": \"HOME\", \"slug\": \"home-main\", \"content_type\": 5, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home-main/\", \"owner\": 1, \"seo_title\": \"Home\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T15:17:28.252Z\", \"last_published_at\": \"2020-07-31T12:12:50.490Z\", \"latest_revision_created_at\": \"2020-07-31T12:12:50.465Z\", \"live_revision\": 49, \"carousel\": \"[{\\\"type\\\": \\\"Images\\\", \\\"value\\\": 9, \\\"id\\\": \\\"4d95d89b-ff6c-42f2-a046-d36bf09e8623\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 10, \\\"id\\\": \\\"1b245b4f-8c19-451b-9985-d3f7ebc8cc51\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 11, \\\"id\\\": \\\"f779fa17-daa0-42a7-9b19-06b316cb8f8f\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 12, \\\"id\\\": \\\"743c6330-1fd3-40bf-a321-978476cefe31\\\"}]\", \"header\": \"Always for a more inclusive society\", \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Ateneo Special Education Society (SPEED) is a Sector-based Cluster of the Ateneo de Manila University. As a student-run organization, we aim to provide an inclusive society for persons with special needs, as well as embrace their value as human beings through our projects and by partnering with various institutions.</p>\\\", \\\"id\\\": \\\"fb4bb189-0d92-4234-b149-378da0b736a5\\\"}]\", \"mission_desc\": \"[{\\\"type\\\": \\\"MissionDescription\\\", \\\"value\\\": \\\"<p>As an organization that is geared towards building an inclusive society, we empower the special needs sector by collaborating with organizations and holistically forming our members as advocates of the special needs sector.</p>\\\", \\\"id\\\": \\\"eb179f6a-3474-4c02-9ef6-0ffaa2f6b311\\\"}]\", \"vision_desc\": \"[{\\\"type\\\": \\\"VisionDescription\\\", \\\"value\\\": \\\"<p>Our organization envisions an inclusive Philippines that provides persons with special needs an equitable means to live a quality life and an avenue to embrace their value as human beings.</p>\\\", \\\"id\\\": \\\"17919cd1-bebb-4826-809d-9ae464380d2e\\\"}]\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 53,
+  "fields": {
+    "page": 39,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T12:45:40.405Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 39, \"path\": \"00010002\", \"depth\": 2, \"numchild\": 5, \"title\": \"HOME\", \"draft_title\": \"HOME\", \"slug\": \"home-main\", \"content_type\": 5, \"live\": true, \"has_unpublished_changes\": true, \"url_path\": \"/home-main/\", \"owner\": 1, \"seo_title\": \"Home\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T15:17:28.252Z\", \"last_published_at\": \"2020-07-31T12:12:50.490Z\", \"latest_revision_created_at\": \"2020-07-31T12:45:37.242Z\", \"live_revision\": 49, \"carousel\": \"[{\\\"type\\\": \\\"Images\\\", \\\"value\\\": 9, \\\"id\\\": \\\"4d95d89b-ff6c-42f2-a046-d36bf09e8623\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 10, \\\"id\\\": \\\"1b245b4f-8c19-451b-9985-d3f7ebc8cc51\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 11, \\\"id\\\": \\\"f779fa17-daa0-42a7-9b19-06b316cb8f8f\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 12, \\\"id\\\": \\\"743c6330-1fd3-40bf-a321-978476cefe31\\\"}]\", \"header\": \"Always for a more inclusive society\", \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Ateneo Special Education Society (SPEED) is a Sector-based Cluster of the Ateneo de Manila University. As a student-run organization, we aim to provide an inclusive society for persons with special needs, as well as embrace their value as human beings through our projects and by partnering with various institutions.</p>\\\", \\\"id\\\": \\\"fb4bb189-0d92-4234-b149-378da0b736a5\\\"}]\", \"mission_desc\": \"[{\\\"type\\\": \\\"MissionDescription\\\", \\\"value\\\": \\\"<p>As an organization that is geared towards building an inclusive society, we empower the special needs sector by collaborating with organizations and holistically forming our members as advocates of the special needs sector.</p>\\\", \\\"id\\\": \\\"eb179f6a-3474-4c02-9ef6-0ffaa2f6b311\\\"}]\", \"vision_desc\": \"[{\\\"type\\\": \\\"VisionDescription\\\", \\\"value\\\": \\\"<p>Our organization envisions an inclusive Philippines that provides persons with special needs an equitable means to live a quality life and an avenue to embrace their value as human beings.</p>\\\", \\\"id\\\": \\\"17919cd1-bebb-4826-809d-9ae464380d2e\\\"}]\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 54,
+  "fields": {
+    "page": 39,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T12:58:46.876Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 39, \"path\": \"00010002\", \"depth\": 2, \"numchild\": 5, \"title\": \"HOME\", \"draft_title\": \"HOME\", \"slug\": \"home\", \"content_type\": 5, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home-main/\", \"owner\": 1, \"seo_title\": \"Home\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T15:17:28.252Z\", \"last_published_at\": \"2020-07-31T12:45:40.433Z\", \"latest_revision_created_at\": \"2020-07-31T12:45:40.405Z\", \"live_revision\": 53, \"carousel\": \"[{\\\"type\\\": \\\"Images\\\", \\\"value\\\": 9, \\\"id\\\": \\\"4d95d89b-ff6c-42f2-a046-d36bf09e8623\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 10, \\\"id\\\": \\\"1b245b4f-8c19-451b-9985-d3f7ebc8cc51\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 11, \\\"id\\\": \\\"f779fa17-daa0-42a7-9b19-06b316cb8f8f\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 12, \\\"id\\\": \\\"743c6330-1fd3-40bf-a321-978476cefe31\\\"}]\", \"header\": \"Always for a more inclusive society\", \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Ateneo Special Education Society (SPEED) is a Sector-based Cluster of the Ateneo de Manila University. As a student-run organization, we aim to provide an inclusive society for persons with special needs, as well as embrace their value as human beings through our projects and by partnering with various institutions.</p>\\\", \\\"id\\\": \\\"fb4bb189-0d92-4234-b149-378da0b736a5\\\"}]\", \"mission_desc\": \"[{\\\"type\\\": \\\"MissionDescription\\\", \\\"value\\\": \\\"<p>As an organization that is geared towards building an inclusive society, we empower the special needs sector by collaborating with organizations and holistically forming our members as advocates of the special needs sector.</p>\\\", \\\"id\\\": \\\"eb179f6a-3474-4c02-9ef6-0ffaa2f6b311\\\"}]\", \"vision_desc\": \"[{\\\"type\\\": \\\"VisionDescription\\\", \\\"value\\\": \\\"<p>Our organization envisions an inclusive Philippines that provides persons with special needs an equitable means to live a quality life and an avenue to embrace their value as human beings.</p>\\\", \\\"id\\\": \\\"17919cd1-bebb-4826-809d-9ae464380d2e\\\"}]\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 55,
+  "fields": {
+    "page": 39,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T12:58:50.796Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 39, \"path\": \"00010002\", \"depth\": 2, \"numchild\": 5, \"title\": \"HOME\", \"draft_title\": \"HOME\", \"slug\": \"home\", \"content_type\": 5, \"live\": true, \"has_unpublished_changes\": true, \"url_path\": \"/home/\", \"owner\": 1, \"seo_title\": \"Home\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T15:17:28.252Z\", \"last_published_at\": \"2020-07-31T12:45:40.433Z\", \"latest_revision_created_at\": \"2020-07-31T12:58:46.876Z\", \"live_revision\": 53, \"carousel\": \"[{\\\"type\\\": \\\"Images\\\", \\\"value\\\": 9, \\\"id\\\": \\\"4d95d89b-ff6c-42f2-a046-d36bf09e8623\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 10, \\\"id\\\": \\\"1b245b4f-8c19-451b-9985-d3f7ebc8cc51\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 11, \\\"id\\\": \\\"f779fa17-daa0-42a7-9b19-06b316cb8f8f\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 12, \\\"id\\\": \\\"743c6330-1fd3-40bf-a321-978476cefe31\\\"}]\", \"header\": \"Always for a more inclusive society\", \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Ateneo Special Education Society (SPEED) is a Sector-based Cluster of the Ateneo de Manila University. As a student-run organization, we aim to provide an inclusive society for persons with special needs, as well as embrace their value as human beings through our projects and by partnering with various institutions.</p>\\\", \\\"id\\\": \\\"fb4bb189-0d92-4234-b149-378da0b736a5\\\"}]\", \"mission_desc\": \"[{\\\"type\\\": \\\"MissionDescription\\\", \\\"value\\\": \\\"<p>As an organization that is geared towards building an inclusive society, we empower the special needs sector by collaborating with organizations and holistically forming our members as advocates of the special needs sector.</p>\\\", \\\"id\\\": \\\"eb179f6a-3474-4c02-9ef6-0ffaa2f6b311\\\"}]\", \"vision_desc\": \"[{\\\"type\\\": \\\"VisionDescription\\\", \\\"value\\\": \\\"<p>Our organization envisions an inclusive Philippines that provides persons with special needs an equitable means to live a quality life and an avenue to embrace their value as human beings.</p>\\\", \\\"id\\\": \\\"17919cd1-bebb-4826-809d-9ae464380d2e\\\"}]\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 56,
+  "fields": {
+    "page": 23,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T13:07:28.135Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 23, \"path\": \"000100020005\", \"depth\": 3, \"numchild\": 6, \"title\": \"OUR STORIES\", \"draft_title\": \"OUR STORIES\", \"slug\": \"our-stories\", \"content_type\": 16, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/oss/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T12:49:31.620Z\", \"last_published_at\": \"2020-07-10T12:49:31.620Z\", \"latest_revision_created_at\": \"2020-07-10T12:49:31.591Z\", \"live_revision\": 25, \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Hear more from our members as they share their personal insights about our different projects and events. By spreading our own experiences and voices, we reach more people and inspire others to become fellow advocates for the sector.</p>\\\", \\\"id\\\": \\\"28a51b6c-4a51-433e-b3b3-7b2072ea0a73\\\"}]\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 57,
+  "fields": {
+    "page": 23,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T13:07:31.428Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 23, \"path\": \"000100020005\", \"depth\": 3, \"numchild\": 6, \"title\": \"OUR STORIES\", \"draft_title\": \"OUR STORIES\", \"slug\": \"our-stories\", \"content_type\": 16, \"live\": true, \"has_unpublished_changes\": true, \"url_path\": \"/home/our-stories/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T12:49:31.620Z\", \"last_published_at\": \"2020-07-10T12:49:31.620Z\", \"latest_revision_created_at\": \"2020-07-31T13:07:28.135Z\", \"live_revision\": 25, \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Hear more from our members as they share their personal insights about our different projects and events. By spreading our own experiences and voices, we reach more people and inspire others to become fellow advocates for the sector.</p>\\\", \\\"id\\\": \\\"28a51b6c-4a51-433e-b3b3-7b2072ea0a73\\\"}]\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 58,
+  "fields": {
+    "page": 26,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T13:07:50.268Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 26, \"path\": \"000100020002\", \"depth\": 3, \"numchild\": 0, \"title\": \"CONTACT US\", \"draft_title\": \"CONTACT US\", \"slug\": \"contact\", \"content_type\": 6, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/contact-us/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T13:59:01.679Z\", \"last_published_at\": \"2020-07-10T13:59:01.679Z\", \"latest_revision_created_at\": \"2020-07-10T13:59:01.645Z\", \"live_revision\": 31, \"to_address\": \"\", \"from_address\": \"\", \"subject\": \"\", \"success\": \"\", \"content\": \"[{\\\"type\\\": \\\"payment_details\\\", \\\"value\\\": \\\"<p>Donate to etc etc etc</p>\\\", \\\"id\\\": \\\"cb846a77-fd99-4c72-b1f2-ab96be951f92\\\"}]\", \"form_fields\": [{\"pk\": 1, \"sort_order\": 0, \"label\": \"Name\", \"field_type\": \"singleline\", \"required\": true, \"choices\": \"\", \"default_value\": \"\", \"help_text\": \"Please type your full name\", \"page\": 26}, {\"pk\": 2, \"sort_order\": 1, \"label\": \"Email\", \"field_type\": \"email\", \"required\": true, \"choices\": \"\", \"default_value\": \"\", \"help_text\": \"Please type your email\", \"page\": 26}, {\"pk\": 3, \"sort_order\": 2, \"label\": \"Subject of Message\", \"field_type\": \"dropdown\", \"required\": true, \"choices\": \"Inquiry, Donation, Feedback\", \"default_value\": \"\", \"help_text\": \"\", \"page\": 26}]}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 59,
+  "fields": {
+    "page": 21,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T13:09:46.491Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 21, \"path\": \"000100020004\", \"depth\": 3, \"numchild\": 8, \"title\": \"OUR PROJECTS\", \"draft_title\": \"OUR PROJECTS\", \"slug\": \"our-projects\", \"content_type\": 13, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/op/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T12:46:50.933Z\", \"last_published_at\": \"2020-07-10T12:58:08.841Z\", \"latest_revision_created_at\": \"2020-07-10T12:58:08.803Z\", \"live_revision\": 27, \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\\\", \\\"id\\\": \\\"7faeb9bb-df6e-4058-a308-eb2103138d9b\\\"}]\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 60,
+  "fields": {
+    "page": 21,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T13:09:48.879Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 21, \"path\": \"000100020004\", \"depth\": 3, \"numchild\": 8, \"title\": \"OUR PROJECTS\", \"draft_title\": \"OUR PROJECTS\", \"slug\": \"our-projects\", \"content_type\": 13, \"live\": true, \"has_unpublished_changes\": true, \"url_path\": \"/home/our-projects/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T12:46:50.933Z\", \"last_published_at\": \"2020-07-10T12:58:08.841Z\", \"latest_revision_created_at\": \"2020-07-31T13:09:46.491Z\", \"live_revision\": 27, \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\\\", \\\"id\\\": \\\"7faeb9bb-df6e-4058-a308-eb2103138d9b\\\"}]\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 61,
+  "fields": {
+    "page": 30,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T13:10:22.052Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 30, \"path\": \"0001000200040005\", \"depth\": 4, \"numchild\": 0, \"title\": \"A Special Cafe\", \"draft_title\": \"A Special Cafe\", \"slug\": \"special-cafe\", \"content_type\": 14, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/our-projects/special-cafe/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T15:06:31.563Z\", \"last_published_at\": \"2020-07-10T15:06:31.563Z\", \"latest_revision_created_at\": \"2020-07-10T15:06:31.528Z\", \"live_revision\": 37, \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\\\", \\\"id\\\": \\\"d3412134-be04-4050-810a-615ab23bd476\\\"}]\", \"type\": \"Finance\", \"highlights\": \"[{\\\"type\\\": \\\"Images\\\", \\\"value\\\": 20, \\\"id\\\": \\\"5f57341a-6cec-4af7-a2bb-73f44c50ab54\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 22, \\\"id\\\": \\\"131404b1-2a96-4afb-9c3b-66ed092fd247\\\"}]\", \"thumbnail\": 19, \"date\": \"2020-07-11\", \"stories\": [{\"pk\": 2, \"sort_order\": 0, \"project\": 30, \"story\": null}]}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 62,
+  "fields": {
+    "page": 30,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T13:13:44.019Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 30, \"path\": \"0001000200040005\", \"depth\": 4, \"numchild\": 0, \"title\": \"A Special Cafe\", \"draft_title\": \"A Special Cafe\", \"slug\": \"special-cafe\", \"content_type\": 14, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/our-projects/special-cafe/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T15:06:31.563Z\", \"last_published_at\": \"2020-07-31T13:10:22.083Z\", \"latest_revision_created_at\": \"2020-07-31T13:10:22.052Z\", \"live_revision\": 61, \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\\\", \\\"id\\\": \\\"d3412134-be04-4050-810a-615ab23bd476\\\"}]\", \"type\": \"Finance\", \"highlights\": \"[{\\\"type\\\": \\\"Images\\\", \\\"value\\\": 20, \\\"id\\\": \\\"5f57341a-6cec-4af7-a2bb-73f44c50ab54\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 22, \\\"id\\\": \\\"131404b1-2a96-4afb-9c3b-66ed092fd247\\\"}]\", \"thumbnail\": 19, \"date\": \"2020-07-11\", \"stories\": [{\"pk\": 2, \"sort_order\": 0, \"project\": 30, \"story\": null}]}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 63,
+  "fields": {
+    "page": 30,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T13:13:55.649Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 30, \"path\": \"0001000200040005\", \"depth\": 4, \"numchild\": 0, \"title\": \"A Special Cafe\", \"draft_title\": \"A Special Cafe\", \"slug\": \"special-cafe\", \"content_type\": 14, \"live\": true, \"has_unpublished_changes\": true, \"url_path\": \"/home/our-projects/special-cafe/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T15:06:31.563Z\", \"last_published_at\": \"2020-07-31T13:10:22.083Z\", \"latest_revision_created_at\": \"2020-07-31T13:13:44.019Z\", \"live_revision\": 61, \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\\\", \\\"id\\\": \\\"d3412134-be04-4050-810a-615ab23bd476\\\"}]\", \"type\": \"Finance\", \"highlights\": \"[{\\\"type\\\": \\\"Images\\\", \\\"value\\\": 20, \\\"id\\\": \\\"5f57341a-6cec-4af7-a2bb-73f44c50ab54\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 22, \\\"id\\\": \\\"131404b1-2a96-4afb-9c3b-66ed092fd247\\\"}]\", \"thumbnail\": 19, \"date\": \"2020-07-11\", \"stories\": []}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 64,
+  "fields": {
+    "page": 30,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T13:14:51.378Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 30, \"path\": \"0001000200040005\", \"depth\": 4, \"numchild\": 0, \"title\": \"A Special Cafe\", \"draft_title\": \"A Special Cafe\", \"slug\": \"special-cafe\", \"content_type\": 14, \"live\": true, \"has_unpublished_changes\": true, \"url_path\": \"/home/our-projects/special-cafe/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T15:06:31.563Z\", \"last_published_at\": \"2020-07-31T13:10:22.083Z\", \"latest_revision_created_at\": \"2020-07-31T13:13:55.649Z\", \"live_revision\": 61, \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\\\", \\\"id\\\": \\\"d3412134-be04-4050-810a-615ab23bd476\\\"}]\", \"type\": \"Finance\", \"highlights\": \"[{\\\"type\\\": \\\"Images\\\", \\\"value\\\": 20, \\\"id\\\": \\\"5f57341a-6cec-4af7-a2bb-73f44c50ab54\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 22, \\\"id\\\": \\\"131404b1-2a96-4afb-9c3b-66ed092fd247\\\"}]\", \"thumbnail\": 19, \"date\": \"2020-07-11\", \"stories\": [{\"pk\": null, \"sort_order\": 0, \"project\": 30, \"story\": null}]}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 65,
+  "fields": {
+    "page": 30,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T13:17:46.869Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 30, \"path\": \"0001000200040005\", \"depth\": 4, \"numchild\": 0, \"title\": \"A Special Cafe\", \"draft_title\": \"A Special Cafe\", \"slug\": \"special-cafe\", \"content_type\": 14, \"live\": true, \"has_unpublished_changes\": true, \"url_path\": \"/home/our-projects/special-cafe/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T15:06:31.563Z\", \"last_published_at\": \"2020-07-31T13:10:22.083Z\", \"latest_revision_created_at\": \"2020-07-31T13:14:51.378Z\", \"live_revision\": 61, \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\\\", \\\"id\\\": \\\"d3412134-be04-4050-810a-615ab23bd476\\\"}]\", \"type\": \"Finance\", \"highlights\": \"[{\\\"type\\\": \\\"Images\\\", \\\"value\\\": 20, \\\"id\\\": \\\"5f57341a-6cec-4af7-a2bb-73f44c50ab54\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 22, \\\"id\\\": \\\"131404b1-2a96-4afb-9c3b-66ed092fd247\\\"}]\", \"thumbnail\": 19, \"date\": \"2020-07-11\", \"stories\": []}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 66,
+  "fields": {
+    "page": 30,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T13:21:32.557Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 30, \"path\": \"0001000200040005\", \"depth\": 4, \"numchild\": 0, \"title\": \"A Special Cafe\", \"draft_title\": \"A Special Cafe\", \"slug\": \"special-cafe\", \"content_type\": 14, \"live\": true, \"has_unpublished_changes\": true, \"url_path\": \"/home/our-projects/special-cafe/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T15:06:31.563Z\", \"last_published_at\": \"2020-07-31T13:10:22.083Z\", \"latest_revision_created_at\": \"2020-07-31T13:17:46.869Z\", \"live_revision\": 61, \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\\\", \\\"id\\\": \\\"d3412134-be04-4050-810a-615ab23bd476\\\"}]\", \"type\": \"Finance\", \"highlights\": \"[{\\\"type\\\": \\\"Images\\\", \\\"value\\\": 20, \\\"id\\\": \\\"5f57341a-6cec-4af7-a2bb-73f44c50ab54\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 22, \\\"id\\\": \\\"131404b1-2a96-4afb-9c3b-66ed092fd247\\\"}]\", \"thumbnail\": 19, \"date\": \"2020-07-11\", \"stories\": []}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 67,
+  "fields": {
+    "page": 30,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T13:21:46.926Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 30, \"path\": \"0001000200040005\", \"depth\": 4, \"numchild\": 0, \"title\": \"A Special Cafe\", \"draft_title\": \"A Special Cafe\", \"slug\": \"special-cafe\", \"content_type\": 14, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/our-projects/special-cafe/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T15:06:31.563Z\", \"last_published_at\": \"2020-07-31T13:21:32.585Z\", \"latest_revision_created_at\": \"2020-07-31T13:21:32.557Z\", \"live_revision\": 66, \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\\\", \\\"id\\\": \\\"d3412134-be04-4050-810a-615ab23bd476\\\"}]\", \"type\": \"Finance\", \"highlights\": \"[{\\\"type\\\": \\\"Images\\\", \\\"value\\\": 20, \\\"id\\\": \\\"5f57341a-6cec-4af7-a2bb-73f44c50ab54\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 22, \\\"id\\\": \\\"131404b1-2a96-4afb-9c3b-66ed092fd247\\\"}]\", \"thumbnail\": 19, \"date\": \"2020-07-11\", \"stories\": [{\"pk\": null, \"sort_order\": 0, \"project\": 30, \"story\": null}]}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 68,
+  "fields": {
+    "page": 30,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T13:21:59.967Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 30, \"path\": \"0001000200040005\", \"depth\": 4, \"numchild\": 0, \"title\": \"A Special Cafe\", \"draft_title\": \"A Special Cafe\", \"slug\": \"special-cafe\", \"content_type\": 14, \"live\": true, \"has_unpublished_changes\": true, \"url_path\": \"/home/our-projects/special-cafe/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T15:06:31.563Z\", \"last_published_at\": \"2020-07-31T13:21:32.585Z\", \"latest_revision_created_at\": \"2020-07-31T13:21:46.926Z\", \"live_revision\": 66, \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\\\", \\\"id\\\": \\\"d3412134-be04-4050-810a-615ab23bd476\\\"}]\", \"type\": \"Finance\", \"highlights\": \"[{\\\"type\\\": \\\"Images\\\", \\\"value\\\": 20, \\\"id\\\": \\\"5f57341a-6cec-4af7-a2bb-73f44c50ab54\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 22, \\\"id\\\": \\\"131404b1-2a96-4afb-9c3b-66ed092fd247\\\"}]\", \"thumbnail\": 19, \"date\": \"2020-07-11\", \"stories\": [{\"pk\": null, \"sort_order\": 0, \"project\": 30, \"story\": 34}]}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 69,
+  "fields": {
+    "page": 30,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T13:22:08.606Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 30, \"path\": \"0001000200040005\", \"depth\": 4, \"numchild\": 0, \"title\": \"A Special Cafe\", \"draft_title\": \"A Special Cafe\", \"slug\": \"special-cafe\", \"content_type\": 14, \"live\": true, \"has_unpublished_changes\": true, \"url_path\": \"/home/our-projects/special-cafe/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T15:06:31.563Z\", \"last_published_at\": \"2020-07-31T13:21:32.585Z\", \"latest_revision_created_at\": \"2020-07-31T13:21:59.967Z\", \"live_revision\": 66, \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\\\", \\\"id\\\": \\\"d3412134-be04-4050-810a-615ab23bd476\\\"}]\", \"type\": \"Finance\", \"highlights\": \"[{\\\"type\\\": \\\"Images\\\", \\\"value\\\": 20, \\\"id\\\": \\\"5f57341a-6cec-4af7-a2bb-73f44c50ab54\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 22, \\\"id\\\": \\\"131404b1-2a96-4afb-9c3b-66ed092fd247\\\"}]\", \"thumbnail\": 19, \"date\": \"2020-07-11\", \"stories\": []}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 70,
+  "fields": {
+    "page": 30,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T13:22:17.472Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 30, \"path\": \"0001000200040005\", \"depth\": 4, \"numchild\": 0, \"title\": \"A Special Cafe\", \"draft_title\": \"A Special Cafe\", \"slug\": \"special-cafe\", \"content_type\": 14, \"live\": true, \"has_unpublished_changes\": true, \"url_path\": \"/home/our-projects/special-cafe/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T15:06:31.563Z\", \"last_published_at\": \"2020-07-31T13:21:32.585Z\", \"latest_revision_created_at\": \"2020-07-31T13:22:08.606Z\", \"live_revision\": 66, \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\\\", \\\"id\\\": \\\"d3412134-be04-4050-810a-615ab23bd476\\\"}]\", \"type\": \"Finance\", \"highlights\": \"[{\\\"type\\\": \\\"Images\\\", \\\"value\\\": 20, \\\"id\\\": \\\"5f57341a-6cec-4af7-a2bb-73f44c50ab54\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 22, \\\"id\\\": \\\"131404b1-2a96-4afb-9c3b-66ed092fd247\\\"}]\", \"thumbnail\": 19, \"date\": \"2020-07-11\", \"stories\": [{\"pk\": null, \"sort_order\": 0, \"project\": 30, \"story\": 35}]}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 71,
+  "fields": {
+    "page": 30,
+    "submitted_for_moderation": false,
+    "created_at": "2020-07-31T13:22:20.125Z",
+    "user": [
+      "admin"
+    ],
+    "content_json": "{\"pk\": 30, \"path\": \"0001000200040005\", \"depth\": 4, \"numchild\": 0, \"title\": \"A Special Cafe\", \"draft_title\": \"A Special Cafe\", \"slug\": \"special-cafe\", \"content_type\": 14, \"live\": true, \"has_unpublished_changes\": true, \"url_path\": \"/home/our-projects/special-cafe/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2020-07-10T15:06:31.563Z\", \"last_published_at\": \"2020-07-31T13:21:32.585Z\", \"latest_revision_created_at\": \"2020-07-31T13:22:17.472Z\", \"live_revision\": 66, \"desc\": \"[{\\\"type\\\": \\\"Description\\\", \\\"value\\\": \\\"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\\\", \\\"id\\\": \\\"d3412134-be04-4050-810a-615ab23bd476\\\"}]\", \"type\": \"Finance\", \"highlights\": \"[{\\\"type\\\": \\\"Images\\\", \\\"value\\\": 20, \\\"id\\\": \\\"5f57341a-6cec-4af7-a2bb-73f44c50ab54\\\"}, {\\\"type\\\": \\\"Images\\\", \\\"value\\\": 22, \\\"id\\\": \\\"131404b1-2a96-4afb-9c3b-66ed092fd247\\\"}]\", \"thumbnail\": 19, \"date\": \"2020-07-11\", \"stories\": [{\"pk\": null, \"sort_order\": 0, \"project\": 30, \"story\": 35}]}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 1,
+  "fields": {
+    "path": "0001",
+    "depth": 1,
+    "numchild": 1,
+    "title": "Root",
+    "draft_title": "Root",
+    "slug": "root",
+    "content_type": [
+      "wagtailcore",
+      "page"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": null,
+    "last_published_at": null,
+    "latest_revision_created_at": null,
+    "live_revision": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 20,
+  "fields": {
+    "path": "000100020003",
+    "depth": 3,
+    "numchild": 0,
+    "title": "ABOUT US",
+    "draft_title": "ABOUT US",
+    "slug": "about-us",
+    "content_type": [
+      "aboutpage",
+      "aboutpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/about-us/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T12:40:42.721Z",
+    "last_published_at": "2020-07-10T13:52:36.256Z",
+    "latest_revision_created_at": "2020-07-10T13:52:36.219Z",
+    "live_revision": 30
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 21,
+  "fields": {
+    "path": "000100020004",
+    "depth": 3,
+    "numchild": 8,
+    "title": "OUR PROJECTS",
+    "draft_title": "OUR PROJECTS",
+    "slug": "our-projects",
+    "content_type": [
+      "related_projects",
+      "general_projects"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/our-projects/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T12:46:50.933Z",
+    "last_published_at": "2020-07-31T13:09:48.904Z",
+    "latest_revision_created_at": "2020-07-31T13:09:48.879Z",
+    "live_revision": 60
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 22,
+  "fields": {
+    "path": "0001000200040001",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Sparkle",
+    "draft_title": "Sparkle",
+    "slug": "sparkle",
+    "content_type": [
+      "related_projects",
+      "related_projects"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/our-projects/sparkle/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T15:01:34.058Z",
+    "last_published_at": "2020-07-10T15:01:34.058Z",
+    "latest_revision_created_at": "2020-07-10T15:01:34.015Z",
+    "live_revision": 33
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 23,
+  "fields": {
+    "path": "000100020005",
+    "depth": 3,
+    "numchild": 6,
+    "title": "OUR STORIES",
+    "draft_title": "OUR STORIES",
+    "slug": "our-stories",
+    "content_type": [
+      "our_stories_specific",
+      "general_stories"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/our-stories/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T12:49:31.620Z",
+    "last_published_at": "2020-07-31T13:07:31.456Z",
+    "latest_revision_created_at": "2020-07-31T13:07:31.428Z",
+    "live_revision": 57
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 24,
+  "fields": {
+    "path": "0001000200050001",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Mia Geronimo: A Rhythm of Her Own",
+    "draft_title": "Mia Geronimo: A Rhythm of Her Own",
+    "slug": "mia-geronimo-rhythm-her-own",
+    "content_type": [
+      "our_stories_specific",
+      "ourstoriesspecific"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/our-stories/mia-geronimo-rhythm-her-own/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T12:57:51.262Z",
+    "last_published_at": "2020-07-10T12:57:51.262Z",
+    "latest_revision_created_at": "2020-07-10T12:57:51.223Z",
+    "live_revision": 26
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 25,
+  "fields": {
+    "path": "000100020001",
+    "depth": 3,
+    "numchild": 0,
+    "title": "OUR PARTNER AREAS",
+    "draft_title": "OUR PARTNER AREAS",
+    "slug": "our-partner-areas",
+    "content_type": [
+      "our_partner_areas",
+      "ourpartnerareas"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/our-partner-areas/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T13:00:33.445Z",
+    "last_published_at": "2020-07-10T14:59:42.715Z",
+    "latest_revision_created_at": "2020-07-10T14:59:42.626Z",
+    "live_revision": 32
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 26,
+  "fields": {
+    "path": "000100020002",
+    "depth": 3,
+    "numchild": 0,
+    "title": "CONTACT US",
+    "draft_title": "CONTACT US",
+    "slug": "contact-us",
+    "content_type": [
+      "contact",
+      "contactpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": true,
+    "url_path": "/home/contact-us/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T13:59:01.679Z",
+    "last_published_at": "2020-07-10T13:59:01.679Z",
+    "latest_revision_created_at": "2020-07-31T13:07:50.268Z",
+    "live_revision": 31
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 27,
+  "fields": {
+    "path": "0001000200040002",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Spectrum",
+    "draft_title": "Spectrum",
+    "slug": "spectrum",
+    "content_type": [
+      "related_projects",
+      "related_projects"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/our-projects/spectrum/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T15:03:01.944Z",
+    "last_published_at": "2020-07-10T15:03:01.944Z",
+    "latest_revision_created_at": "2020-07-10T15:03:01.904Z",
+    "live_revision": 34
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 28,
+  "fields": {
+    "path": "0001000200040003",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Speed Week",
+    "draft_title": "Speed Week",
+    "slug": "speed-week",
+    "content_type": [
+      "related_projects",
+      "related_projects"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/our-projects/speed-week/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T15:04:41.185Z",
+    "last_published_at": "2020-07-10T15:04:41.185Z",
+    "latest_revision_created_at": "2020-07-10T15:04:41.155Z",
+    "live_revision": 35
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 29,
+  "fields": {
+    "path": "0001000200040004",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Splendour",
+    "draft_title": "Splendour",
+    "slug": "splendour",
+    "content_type": [
+      "related_projects",
+      "related_projects"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/our-projects/splendour/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T15:05:17.638Z",
+    "last_published_at": "2020-07-10T15:05:17.638Z",
+    "latest_revision_created_at": "2020-07-10T15:05:17.557Z",
+    "live_revision": 36
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 30,
+  "fields": {
+    "path": "0001000200040005",
+    "depth": 4,
+    "numchild": 0,
+    "title": "A Special Cafe",
+    "draft_title": "A Special Cafe",
+    "slug": "special-cafe",
+    "content_type": [
+      "related_projects",
+      "related_projects"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/our-projects/special-cafe/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T15:06:31.563Z",
+    "last_published_at": "2020-07-31T13:22:20.162Z",
+    "latest_revision_created_at": "2020-07-31T13:22:20.125Z",
+    "live_revision": 71
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 31,
+  "fields": {
+    "path": "0001000200040006",
+    "depth": 4,
+    "numchild": 0,
+    "title": "A Special Picnic",
+    "draft_title": "A Special Picnic",
+    "slug": "special-picnic",
+    "content_type": [
+      "related_projects",
+      "related_projects"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/our-projects/special-picnic/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T15:07:21.536Z",
+    "last_published_at": "2020-07-10T15:07:21.536Z",
+    "latest_revision_created_at": "2020-07-10T15:07:21.501Z",
+    "live_revision": 38
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 32,
+  "fields": {
+    "path": "0001000200040007",
+    "depth": 4,
+    "numchild": 0,
+    "title": "No Speed Limit",
+    "draft_title": "No Speed Limit",
+    "slug": "no-speed-limit",
+    "content_type": [
+      "related_projects",
+      "related_projects"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/our-projects/no-speed-limit/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T15:08:20.605Z",
+    "last_published_at": "2020-07-10T15:08:20.605Z",
+    "latest_revision_created_at": "2020-07-10T15:08:20.571Z",
+    "live_revision": 39
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 33,
+  "fields": {
+    "path": "0001000200040008",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Sprout",
+    "draft_title": "Sprout",
+    "slug": "sprout",
+    "content_type": [
+      "related_projects",
+      "related_projects"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/our-projects/sprout/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T15:09:10.074Z",
+    "last_published_at": "2020-07-10T15:09:10.074Z",
+    "latest_revision_created_at": "2020-07-10T15:09:09.975Z",
+    "live_revision": 40
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 34,
+  "fields": {
+    "path": "0001000200050002",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Charlotte's Web",
+    "draft_title": "Charlotte's Web",
+    "slug": "charlottes-web",
+    "content_type": [
+      "our_stories_specific",
+      "ourstoriesspecific"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/our-stories/charlottes-web/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T15:12:03.682Z",
+    "last_published_at": "2020-07-10T15:12:03.682Z",
+    "latest_revision_created_at": "2020-07-10T15:12:03.645Z",
+    "live_revision": 41
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 35,
+  "fields": {
+    "path": "0001000200050003",
+    "depth": 4,
+    "numchild": 0,
+    "title": "The Lightning Thief",
+    "draft_title": "The Lightning Thief",
+    "slug": "lightning-thief",
+    "content_type": [
+      "our_stories_specific",
+      "ourstoriesspecific"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/our-stories/lightning-thief/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T15:12:52.768Z",
+    "last_published_at": "2020-07-10T15:12:52.768Z",
+    "latest_revision_created_at": "2020-07-10T15:12:52.725Z",
+    "live_revision": 42
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 36,
+  "fields": {
+    "path": "0001000200050004",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Harry Potter",
+    "draft_title": "Harry Potter",
+    "slug": "harry-potter",
+    "content_type": [
+      "our_stories_specific",
+      "ourstoriesspecific"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/our-stories/harry-potter/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T15:13:32.404Z",
+    "last_published_at": "2020-07-10T15:13:32.404Z",
+    "latest_revision_created_at": "2020-07-10T15:13:32.367Z",
+    "live_revision": 43
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 37,
+  "fields": {
+    "path": "0001000200050005",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Lord of the Rings",
+    "draft_title": "Lord of the Rings",
+    "slug": "lord-rings",
+    "content_type": [
+      "our_stories_specific",
+      "ourstoriesspecific"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/our-stories/lord-rings/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T15:14:50.078Z",
+    "last_published_at": "2020-07-10T15:14:50.078Z",
+    "latest_revision_created_at": "2020-07-10T15:14:50.041Z",
+    "live_revision": 44
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 38,
+  "fields": {
+    "path": "0001000200050006",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Holes",
+    "draft_title": "Holes",
+    "slug": "holes",
+    "content_type": [
+      "our_stories_specific",
+      "ourstoriesspecific"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/our-stories/holes/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T15:15:30.454Z",
+    "last_published_at": "2020-07-10T15:15:30.454Z",
+    "latest_revision_created_at": "2020-07-10T15:15:30.426Z",
+    "live_revision": 45
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 39,
+  "fields": {
+    "path": "00010002",
+    "depth": 2,
+    "numchild": 5,
+    "title": "HOME",
+    "draft_title": "HOME",
+    "slug": "home",
+    "content_type": [
+      "home",
+      "homepage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/",
+    "owner": [
+      "jaime"
+    ],
+    "seo_title": "Home",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2020-07-10T15:17:28.252Z",
+    "last_published_at": "2020-07-31T12:58:50.819Z",
+    "latest_revision_created_at": "2020-07-31T12:58:50.796Z",
+    "live_revision": 55
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 1,
+  "fields": {
+    "collection": 1,
+    "title": "Code",
+    "file": "original_images/Screen_Shot_2020-06-27_at_9.32.48_PM.png",
+    "width": 2880,
+    "height": 1572,
+    "created_at": "2020-06-28T03:13:28.796Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 690272,
+    "file_hash": "591ff31e736accb9e64dc9ac91ae5fa5fedc1b9a"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 2,
+  "fields": {
+    "collection": 1,
+    "title": "Gv Expo",
+    "file": "original_images/Screen_Shot_2020-06-27_at_9.33.01_PM.png",
+    "width": 2880,
+    "height": 1582,
+    "created_at": "2020-06-28T03:14:42.118Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 545679,
+    "file_hash": "b725e3a4f45b41dff0ac495c476a2b20a1e432b2"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 3,
+  "fields": {
+    "collection": 1,
+    "title": "Sparkle",
+    "file": "original_images/Sparkle.jpg",
+    "width": 5184,
+    "height": 3456,
+    "created_at": "2020-06-30T03:32:01.974Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 6785183,
+    "file_hash": "8c736ef5416ed0701f754d98c01faf8615240819"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 4,
+  "fields": {
+    "collection": 1,
+    "title": "Spectrum",
+    "file": "original_images/Spectrum.jpg",
+    "width": 2048,
+    "height": 1365,
+    "created_at": "2020-06-30T03:33:13.862Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 244260,
+    "file_hash": "acd6a8c2265e89314b98aa4be2d03fed3f808f82"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 5,
+  "fields": {
+    "collection": 1,
+    "title": "Mia",
+    "file": "original_images/P1015745.jpg",
+    "width": 4032,
+    "height": 2272,
+    "created_at": "2020-06-30T03:35:03.257Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 3856565,
+    "file_hash": "759be45334b672e3145e6063db18506f0a3b7b38"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 6,
+  "fields": {
+    "collection": 1,
+    "title": "Article",
+    "file": "original_images/Copy_of_Lim-48.jpg",
+    "width": 5130,
+    "height": 3420,
+    "created_at": "2020-06-30T03:36:17.262Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 3998441,
+    "file_hash": "8bcddfbfb3832de57eb5b6faf9298336e860366e"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 7,
+  "fields": {
+    "collection": 1,
+    "title": "Euchristiana Center",
+    "file": "original_images/Eucharistiana_Center_-_Picture_5.jpg",
+    "width": 720,
+    "height": 960,
+    "created_at": "2020-06-30T03:37:43.118Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 99311,
+    "file_hash": "e07afd75bd3119392c9d27b7db721a1a62d48a08"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 8,
+  "fields": {
+    "collection": 1,
+    "title": "LARO, LAPIS AT LIBRO",
+    "file": "original_images/Laro_Lapis_at_Libro_-_Picture_7.jpg",
+    "width": 1944,
+    "height": 1296,
+    "created_at": "2020-06-30T03:38:14.637Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 260714,
+    "file_hash": "8ef4c685c76da44f2e371cb4a250ff35213d9e6b"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 9,
+  "fields": {
+    "collection": 1,
+    "title": "Carousel1",
+    "file": "original_images/Main_Header_-_Picture_1.jpg",
+    "width": 1782,
+    "height": 1188,
+    "created_at": "2020-06-30T03:40:32.360Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 269022,
+    "file_hash": "1b64fdf31dd49a17e9aca099e13c2a93cb404bab"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 10,
+  "fields": {
+    "collection": 1,
+    "title": "Carousel2",
+    "file": "original_images/Main_Header_-_Picture_2.jpg",
+    "width": 2048,
+    "height": 1356,
+    "created_at": "2020-06-30T03:40:42.229Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 213197,
+    "file_hash": "f632841d51f3962b5c4505c6a053632d726a8cb7"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 11,
+  "fields": {
+    "collection": 1,
+    "title": "Carousel3",
+    "file": "original_images/Main_Header_-_Picture_3.jpg",
+    "width": 960,
+    "height": 640,
+    "created_at": "2020-06-30T03:40:54.239Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 79766,
+    "file_hash": "f7375b3b4882fe180d5b889adb4dd42c044e8751"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 12,
+  "fields": {
+    "collection": 1,
+    "title": "Carousel4",
+    "file": "original_images/Main_Header_-_Picture_4.jpg",
+    "width": 1232,
+    "height": 816,
+    "created_at": "2020-06-30T03:41:05.157Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 122488,
+    "file_hash": "8064ed73cda72eb59bf8fe1f918c97990cd5c8e2"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 13,
+  "fields": {
+    "collection": 1,
+    "title": "Precious Gem Academy - Picture 6.jpg",
+    "file": "original_images/Precious_Gem_Academy_-_Picture_6.jpg",
+    "width": 960,
+    "height": 720,
+    "created_at": "2020-07-10T13:06:00.127Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 85993,
+    "file_hash": "c1fe9a090f626a24c4519f79a3700537b730daf0"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 14,
+  "fields": {
+    "collection": 1,
+    "title": "Sacred Heart Center - Picture 3.jpg",
+    "file": "original_images/Sacred_Heart_Center_-_Picture_3.jpg",
+    "width": 960,
+    "height": 540,
+    "created_at": "2020-07-10T13:06:00.299Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 76457,
+    "file_hash": "b8563d6456602c4a7fbbf90a2cd231906e5912f5"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 15,
+  "fields": {
+    "collection": 1,
+    "title": "Servants of Charity - Picture 2.png",
+    "file": "original_images/Servants_of_Charity_-_Picture_2.png",
+    "width": 736,
+    "height": 492,
+    "created_at": "2020-07-10T13:06:00.664Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 557077,
+    "file_hash": "65a661d011a5d205249d8e71a309a2bcd4080603"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 16,
+  "fields": {
+    "collection": 1,
+    "title": "St Francis VSA Arts - Picture 4.jpg",
+    "file": "original_images/St_Francis_VSA_Arts_-_Picture_4.jpg",
+    "width": 960,
+    "height": 540,
+    "created_at": "2020-07-10T13:06:00.855Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 87371,
+    "file_hash": "cdd0bb764cbe9018b29115ab8e62c456e2524d87"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 17,
+  "fields": {
+    "collection": 1,
+    "title": "Ateneo",
+    "file": "original_images/Ateneo.jpg",
+    "width": 640,
+    "height": 425,
+    "created_at": "2020-07-10T14:58:01.568Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 67544,
+    "file_hash": "0839b854918b3d6b3d50ddcd3956dabd96ada3c9"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 18,
+  "fields": {
+    "collection": 1,
+    "title": "UP",
+    "file": "original_images/UP.jpg",
+    "width": 4608,
+    "height": 2368,
+    "created_at": "2020-07-10T14:59:19.297Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 831489,
+    "file_hash": "3e4af2cb7b93e2d1295e76f6baf7f3a6d00c047b"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 19,
+  "fields": {
+    "collection": 1,
+    "title": "A Special Cafe.jpg",
+    "file": "original_images/A_Special_Cafe.jpg",
+    "width": 2048,
+    "height": 1356,
+    "created_at": "2020-07-10T15:03:59.677Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 213892,
+    "file_hash": "ce79a1b1cb4b7fd82deedb5d6cd9a04a9d1ba9d6"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 20,
+  "fields": {
+    "collection": 1,
+    "title": "A Special Picnic.png",
+    "file": "original_images/A_Special_Picnic.png",
+    "width": 1198,
+    "height": 900,
+    "created_at": "2020-07-10T15:03:59.995Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 238797,
+    "file_hash": "ab04dd49693133fd39364b22bc1ab0b8ce48080d"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 21,
+  "fields": {
+    "collection": 1,
+    "title": "No SPEED Limit.jpg",
+    "file": "original_images/No_SPEED_Limit.jpg",
+    "width": 960,
+    "height": 640,
+    "created_at": "2020-07-10T15:04:00.160Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 79766,
+    "file_hash": "f7375b3b4882fe180d5b889adb4dd42c044e8751"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 22,
+  "fields": {
+    "collection": 1,
+    "title": "Spectacular.jpg",
+    "file": "original_images/Spectacular.jpg",
+    "width": 2048,
+    "height": 1458,
+    "created_at": "2020-07-10T15:04:00.611Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 212286,
+    "file_hash": "cb358a157450246c0a73796122699a2d5a202c59"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 23,
+  "fields": {
+    "collection": 1,
+    "title": "SPEED Week.jpg",
+    "file": "original_images/SPEED_Week.jpg",
+    "width": 1070,
+    "height": 1025,
+    "created_at": "2020-07-10T15:04:00.763Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 181983,
+    "file_hash": "b5205d69a486ef14a5cf0b7c606749368235dc81"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 24,
+  "fields": {
+    "collection": 1,
+    "title": "Splendour.jpg",
+    "file": "original_images/Splendour.jpg",
+    "width": 2048,
+    "height": 1536,
+    "created_at": "2020-07-10T15:04:01.184Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 573408,
+    "file_hash": "9e00efe76840201269385626374d74e5ff26af01"
+  }
+},
+{
+  "model": "wagtailimages.image",
+  "pk": 25,
+  "fields": {
+    "collection": 1,
+    "title": "Sprout.jpg",
+    "file": "original_images/Sprout.jpg",
+    "width": 1782,
+    "height": 1188,
+    "created_at": "2020-07-10T15:04:01.395Z",
+    "uploaded_by_user": [
+      "jaime"
+    ],
+    "focal_point_x": null,
+    "focal_point_y": null,
+    "focal_point_width": null,
+    "focal_point_height": null,
+    "file_size": 256724,
+    "file_hash": "efc23bf65607eaa79e7ac54fe3ca711a596ada34"
+  }
+},
+{
+  "model": "our_stories_specific.ourstoriesspecific",
+  "pk": 24,
+  "fields": {
+    "introduction": "I met Mia during a SPEED event. She broke the ice. She was the first person to introduce herself and reach out to people during a breakout session.",
+    "type": null,
+    "date": "2020-07-10",
+    "thumbnail": null,
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim. Tellus at urna condimentum mattis pellentesque id. Purus sit amet volutpat consequat mauris nunc congue nisi vitae. Elementum nibh tellus molestie nunc non blandit massa enim nec. Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit. Tempus iaculis urna id volutpat lacus laoreet non. Eleifend quam adipiscing vitae proin sagittis. Tortor dignissim convallis aenean et tortor at. Curabitur vitae nunc sed velit dignissim sodales ut eu. Magna ac placerat vestibulum lectus. Quam pellentesque nec nam aliquam sem et tortor consequat id. Odio aenean sed adipiscing diam. Euismod lacinia at quis risus sed. A cras semper auctor neque vitae. Enim ut tellus elementum sagittis vitae.</p><p>Sed odio morbi quis commodo odio. Feugiat nibh sed pulvinar proin. Sit amet dictum sit amet. Accumsan tortor posuere ac ut consequat semper. Mattis vulputate enim nulla aliquet porttitor lacus luctus. Pretium viverra suspendisse potenti nullam ac. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Habitasse platea dictumst quisque sagittis purus sit amet. Cursus euismod quis viverra nibh cras pulvinar. Cursus eget nunc scelerisque viverra. Pretium fusce id velit ut tortor pretium viverra. Aliquet nibh praesent tristique magna sit amet purus. Eu augue ut lectus arcu bibendum at. Nisl purus in mollis nunc sed id semper risus. Ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Nulla facilisi etiam dignissim diam quis enim. Praesent elementum facilisis leo vel fringilla est ullamcorper.</p><p>Purus semper eget duis at. Sit amet dictum sit amet justo donec. Aliquam sem fringilla ut morbi tincidunt augue interdum velit. Senectus et netus et malesuada fames ac turpis. Aliquet sagittis id consectetur purus. Nullam eget felis eget nunc. Aliquam purus sit amet luctus venenatis. Dolor morbi non arcu risus quis varius. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Ut porttitor leo a diam sollicitudin tempor id eu. Nulla pellentesque dignissim enim sit. Congue eu consequat ac felis donec. Et malesuada fames ac turpis egestas integer.</p><p>Porttitor eget dolor morbi non arcu risus quis. Dignissim cras tincidunt lobortis feugiat vivamus at. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Quis viverra nibh cras pulvinar mattis nunc sed. Dolor sit amet consectetur adipiscing. Morbi quis commodo odio aenean sed adipiscing diam donec. Aliquet nec ullamcorper sit amet. Est ante in nibh mauris cursus mattis. Eu ultrices vitae auctor eu augue ut. Ac tincidunt vitae semper quis lectus. Nec sagittis aliquam malesuada bibendum arcu. Turpis massa tincidunt dui ut ornare lectus sit. Posuere urna nec tincidunt praesent semper feugiat. Congue mauris rhoncus aenean vel elit. Elementum integer enim neque volutpat ac tincidunt vitae semper quis. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Aliquet bibendum enim facilisis gravida. Sed arcu non odio euismod lacinia at quis risus sed. Nisi vitae suscipit tellus mauris a diam maecenas sed. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur.</p><p>Posuere sollicitudin aliquam ultrices sagittis. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Integer enim neque volutpat ac tincidunt vitae. Turpis massa tincidunt dui ut ornare lectus sit. Et malesuada fames ac turpis egestas integer. Quis auctor elit sed vulputate mi sit amet mauris commodo. Sed tempus urna et pharetra pharetra. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. In hac habitasse platea dictumst vestibulum. Nibh mauris cursus mattis molestie. Eget mauris pharetra et ultrices neque. Imperdiet proin fermentum leo vel orci porta non. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Urna porttitor rhoncus dolor purus.</p>\", \"id\": \"72024402-55cd-4725-91a3-7d476e0a174b\"}, {\"type\": \"block_quote\", \"value\": {\"text\": \"\\\"The world is not always a happy or kind place so people like us must be happy and kind in its place.\\\"\", \"author\": \"Mia Geronimo\"}, \"id\": \"16de45f6-0720-4cbe-855a-b1b33d185434\"}]",
+    "photos": "[]"
+  }
+},
+{
+  "model": "our_stories_specific.ourstoriesspecific",
+  "pk": 34,
+  "fields": {
+    "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "type": null,
+    "date": "2020-07-11",
+    "thumbnail": 22,
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\", \"id\": \"5e73ad2b-3d08-4712-8603-15d584d07766\"}, {\"type\": \"block_quote\", \"value\": {\"text\": \"\\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\\\"\", \"author\": \"Juan Dela Cruz\"}, \"id\": \"4c3b0eb2-06ba-44d5-861a-064799e69c18\"}]",
+    "photos": "[{\"type\": \"Images\", \"value\": 24, \"id\": \"bd21c457-611d-403b-9e62-698ae8a454ae\"}]"
+  }
+},
+{
+  "model": "our_stories_specific.ourstoriesspecific",
+  "pk": 35,
+  "fields": {
+    "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "type": null,
+    "date": "2020-07-11",
+    "thumbnail": 25,
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\", \"id\": \"71e8a2f9-9c7b-4350-ab7c-7cd1c987a5a2\"}]",
+    "photos": "[]"
+  }
+},
+{
+  "model": "our_stories_specific.ourstoriesspecific",
+  "pk": 36,
+  "fields": {
+    "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "type": null,
+    "date": "2020-07-11",
+    "thumbnail": 24,
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus urna duis convallis convallis tellus id. At lectus urna duis convallis convallis tellus id interdum. Euismod nisi porta lorem mollis. Vitae aliquet nec ullamcorper sit. Quam id leo in vitae. Enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Morbi tincidunt ornare massa eget. Eu tincidunt tortor aliquam nulla. Ultrices in iaculis nunc sed augue. Sed risus ultricies tristique nulla aliquet. Leo urna molestie at elementum eu facilisis. Cras adipiscing enim eu turpis. Quis imperdiet massa tincidunt nunc. Placerat in egestas erat imperdiet sed euismod nisi porta. Facilisi etiam dignissim diam quis. Ornare arcu odio ut sem nulla pharetra. A diam maecenas sed enim ut sem viverra aliquet eget. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.</p><p>Sociis natoque penatibus et magnis dis. Urna porttitor rhoncus dolor purus non enim praesent. Facilisis gravida neque convallis a cras semper auctor neque. Morbi leo urna molestie at elementum eu facilisis. Morbi tempus iaculis urna id volutpat lacus. Sed nisi lacus sed viverra. Aliquam eleifend mi in nulla. Massa tincidunt dui ut ornare lectus sit. Quis commodo odio aenean sed adipiscing diam donec adipiscing tristique. Dui ut ornare lectus sit amet est placerat. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Morbi leo urna molestie at elementum eu facilisis sed odio. Tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Lacus vestibulum sed arcu non odio euismod. Donec pretium vulputate sapien nec sagittis aliquam. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Ornare suspendisse sed nisi lacus sed viverra. Quisque id diam vel quam. Non quam lacus suspendisse faucibus.</p><p>Integer vitae justo eget magna fermentum iaculis. Aliquam id diam maecenas ultricies mi. Purus in massa tempor nec feugiat nisl. Id velit ut tortor pretium viverra suspendisse potenti nullam ac. Duis at tellus at urna. Vestibulum mattis ullamcorper velit sed ullamcorper. At tempor commodo ullamcorper a lacus vestibulum. Iaculis eu non diam phasellus vestibulum lorem sed risus. Rutrum quisque non tellus orci ac auctor augue mauris. Venenatis lectus magna fringilla urna. Elementum integer enim neque volutpat. Ut diam quam nulla porttitor massa id. Lobortis scelerisque fermentum dui faucibus. Feugiat nisl pretium fusce id velit ut tortor pretium.</p><p>Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Vulputate sapien nec sagittis aliquam. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Urna nunc id cursus metus aliquam. Eu non diam phasellus vestibulum. Nisl tincidunt eget nullam non nisi est sit amet facilisis. Sem et tortor consequat id porta nibh. Non curabitur gravida arcu ac tortor. Gravida cum sociis natoque penatibus et magnis dis parturient montes. Velit euismod in pellentesque massa placerat duis ultricies. Tortor id aliquet lectus proin nibh. Risus in hendrerit gravida rutrum quisque non tellus orci ac. In arcu cursus euismod quis viverra nibh cras. Vivamus arcu felis bibendum ut tristique. Eget mi proin sed libero enim. Et odio pellentesque diam volutpat commodo sed. Elementum sagittis vitae et leo duis ut diam quam nulla. Nulla aliquet porttitor lacus luctus accumsan tortor. Scelerisque fermentum dui faucibus in.</p><p>Velit ut tortor pretium viverra suspendisse potenti nullam ac. Est ultricies integer quis auctor elit. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Aliquam sem fringilla ut morbi tincidunt augue interdum. In pellentesque massa placerat duis ultricies lacus. Nibh cras pulvinar mattis nunc sed blandit. Tortor aliquam nulla facilisi cras fermentum. Magna sit amet purus gravida quis blandit. Pretium fusce id velit ut tortor. Quisque non tellus orci ac auctor augue mauris augue.</p><p>Convallis a cras semper auctor neque vitae tempus quam pellentesque. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Quis risus sed vulputate odio ut enim blandit. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Tincidunt eget nullam non nisi. Id aliquet lectus proin nibh nisl. Habitant morbi tristique senectus et. Odio tempor orci dapibus ultrices in iaculis nunc. Donec ultrices tincidunt arcu non sodales neque sodales ut. Pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies. Id velit ut tortor pretium viverra suspendisse potenti nullam ac. Semper quis lectus nulla at volutpat diam ut venenatis. Lacus sed viverra tellus in hac habitasse platea. A lacus vestibulum sed arcu non odio. Euismod nisi porta lorem mollis aliquam ut.</p><p>Erat velit scelerisque in dictum non. Enim nec dui nunc mattis. Convallis posuere morbi leo urna molestie at elementum eu facilisis. Eu mi bibendum neque egestas congue quisque egestas diam in. Libero enim sed faucibus turpis in eu. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Etiam tempor orci eu lobortis elementum nibh tellus molestie nunc. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Tortor id aliquet lectus proin nibh. Curabitur gravida arcu ac tortor dignissim. Tellus integer feugiat scelerisque varius morbi. Mauris sit amet massa vitae tortor condimentum. Eget arcu dictum varius duis at consectetur lorem donec. Quam adipiscing vitae proin sagittis nisl rhoncus. Habitasse platea dictumst quisque sagittis. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nec feugiat nisl pretium fusce id velit ut. Dictum sit amet justo donec. Nunc id cursus metus aliquam eleifend mi in.</p>\", \"id\": \"e2e2a0d0-c512-47ae-98ab-de59aefd01ef\"}]",
+    "photos": "[{\"type\": \"Images\", \"value\": 21, \"id\": \"5403954a-0c84-4263-9628-c4b7c1e82dbe\"}, {\"type\": \"Images\", \"value\": 18, \"id\": \"ebe2fb63-2a8f-4359-8bdf-024904511f5e\"}]"
+  }
+},
+{
+  "model": "our_stories_specific.ourstoriesspecific",
+  "pk": 37,
+  "fields": {
+    "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "type": null,
+    "date": "2020-07-04",
+    "thumbnail": 24,
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus urna duis convallis convallis tellus id. At lectus urna duis convallis convallis tellus id interdum. Euismod nisi porta lorem mollis. Vitae aliquet nec ullamcorper sit. Quam id leo in vitae. Enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Morbi tincidunt ornare massa eget. Eu tincidunt tortor aliquam nulla. Ultrices in iaculis nunc sed augue. Sed risus ultricies tristique nulla aliquet. Leo urna molestie at elementum eu facilisis. Cras adipiscing enim eu turpis. Quis imperdiet massa tincidunt nunc. Placerat in egestas erat imperdiet sed euismod nisi porta. Facilisi etiam dignissim diam quis. Ornare arcu odio ut sem nulla pharetra. A diam maecenas sed enim ut sem viverra aliquet eget. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.</p><p>Sociis natoque penatibus et magnis dis. Urna porttitor rhoncus dolor purus non enim praesent. Facilisis gravida neque convallis a cras semper auctor neque. Morbi leo urna molestie at elementum eu facilisis. Morbi tempus iaculis urna id volutpat lacus. Sed nisi lacus sed viverra. Aliquam eleifend mi in nulla. Massa tincidunt dui ut ornare lectus sit. Quis commodo odio aenean sed adipiscing diam donec adipiscing tristique. Dui ut ornare lectus sit amet est placerat. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Morbi leo urna molestie at elementum eu facilisis sed odio. Tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Lacus vestibulum sed arcu non odio euismod. Donec pretium vulputate sapien nec sagittis aliquam. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Ornare suspendisse sed nisi lacus sed viverra. Quisque id diam vel quam. Non quam lacus suspendisse faucibus.</p><p>Integer vitae justo eget magna fermentum iaculis. Aliquam id diam maecenas ultricies mi. Purus in massa tempor nec feugiat nisl. Id velit ut tortor pretium viverra suspendisse potenti nullam ac. Duis at tellus at urna. Vestibulum mattis ullamcorper velit sed ullamcorper. At tempor commodo ullamcorper a lacus vestibulum. Iaculis eu non diam phasellus vestibulum lorem sed risus. Rutrum quisque non tellus orci ac auctor augue mauris. Venenatis lectus magna fringilla urna. Elementum integer enim neque volutpat. Ut diam quam nulla porttitor massa id. Lobortis scelerisque fermentum dui faucibus. Feugiat nisl pretium fusce id velit ut tortor pretium.</p>\", \"id\": \"edc7ccf5-694e-4e80-9127-7363931b64b8\"}, {\"type\": \"block_quote\", \"value\": {\"text\": \"\\\"The greatest glory in living lies not in never falling, but in rising every time we fall.\\\"\", \"author\": \"Nelson Mandela\"}, \"id\": \"e6c3eec5-3908-4102-9ba0-479824a65100\"}]",
+    "photos": "[{\"type\": \"Images\", \"value\": 19, \"id\": \"05506a07-3435-4c3b-87f9-44a1874764fe\"}]"
+  }
+},
+{
+  "model": "our_stories_specific.ourstoriesspecific",
+  "pk": 38,
+  "fields": {
+    "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "type": null,
+    "date": "2020-07-17",
+    "thumbnail": 16,
+    "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus urna duis convallis convallis tellus id. At lectus urna duis convallis convallis tellus id interdum. Euismod nisi porta lorem mollis. Vitae aliquet nec ullamcorper sit. Quam id leo in vitae. Enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Morbi tincidunt ornare massa eget. Eu tincidunt tortor aliquam nulla. Ultrices in iaculis nunc sed augue. Sed risus ultricies tristique nulla aliquet. Leo urna molestie at elementum eu facilisis. Cras adipiscing enim eu turpis. Quis imperdiet massa tincidunt nunc. Placerat in egestas erat imperdiet sed euismod nisi porta. Facilisi etiam dignissim diam quis. Ornare arcu odio ut sem nulla pharetra. A diam maecenas sed enim ut sem viverra aliquet eget. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.</p><p>Sociis natoque penatibus et magnis dis. Urna porttitor rhoncus dolor purus non enim praesent. Facilisis gravida neque convallis a cras semper auctor neque. Morbi leo urna molestie at elementum eu facilisis. Morbi tempus iaculis urna id volutpat lacus. Sed nisi lacus sed viverra. Aliquam eleifend mi in nulla. Massa tincidunt dui ut ornare lectus sit. Quis commodo odio aenean sed adipiscing diam donec adipiscing tristique. Dui ut ornare lectus sit amet est placerat. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Morbi leo urna molestie at elementum eu facilisis sed odio. Tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Lacus vestibulum sed arcu non odio euismod. Donec pretium vulputate sapien nec sagittis aliquam. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Ornare suspendisse sed nisi lacus sed viverra. Quisque id diam vel quam. Non quam lacus suspendisse faucibus.</p><p>Integer vitae justo eget magna fermentum iaculis. Aliquam id diam maecenas ultricies mi. Purus in massa tempor nec feugiat nisl. Id velit ut tortor pretium viverra suspendisse potenti nullam ac. Duis at tellus at urna. Vestibulum mattis ullamcorper velit sed ullamcorper. At tempor commodo ullamcorper a lacus vestibulum. Iaculis eu non diam phasellus vestibulum lorem sed risus. Rutrum quisque non tellus orci ac auctor augue mauris. Venenatis lectus magna fringilla urna. Elementum integer enim neque volutpat. Ut diam quam nulla porttitor massa id. Lobortis scelerisque fermentum dui faucibus. Feugiat nisl pretium fusce id velit ut tortor pretium.</p>\", \"id\": \"0f5f7b89-ab73-420f-baaa-ce657d4dde1d\"}, {\"type\": \"block_quote\", \"value\": {\"text\": \"\\\"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma \\u2013 which is living with the results of other people's thinking.\\\"\", \"author\": \"Steve Jobs\"}, \"id\": \"32bbe363-cfae-4430-b794-8cacee69c746\"}]",
+    "photos": "[]"
+  }
+},
+{
+  "model": "our_stories_specific.general_stories",
+  "pk": 23,
+  "fields": {
+    "desc": "[{\"type\": \"Description\", \"value\": \"<p>Hear more from our members as they share their personal insights about our different projects and events. By spreading our own experiences and voices, we reach more people and inspire others to become fellow advocates for the sector.</p>\", \"id\": \"28a51b6c-4a51-433e-b3b3-7b2072ea0a73\"}]"
+  }
+},
+{
+  "model": "related_projects.related_projects",
+  "pk": 22,
+  "fields": {
+    "desc": "[{\"type\": \"Description\", \"value\": \"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\", \"id\": \"8d4b9ad6-549f-41d9-8f37-3bebd575a671\"}]",
+    "type": "Advocacy",
+    "highlights": "[{\"type\": \"Images\", \"value\": 3, \"id\": \"b284f843-edd4-4406-92a9-c70a67afe994\"}, {\"type\": \"Images\", \"value\": 8, \"id\": \"eb07aacb-38db-47df-900e-e3de191cdaed\"}, {\"type\": \"Images\", \"value\": 10, \"id\": \"5c9c6ca8-5082-43c0-a607-a346b5eaa922\"}, {\"type\": \"Images\", \"value\": 12, \"id\": \"6641d0eb-1775-41f1-9ba4-95be328f87af\"}]",
+    "thumbnail": 3,
+    "date": "2020-05-30"
+  }
+},
+{
+  "model": "related_projects.related_projects",
+  "pk": 27,
+  "fields": {
+    "desc": "[{\"type\": \"Description\", \"value\": \"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\", \"id\": \"c3890ce0-7e05-478e-9054-88b3a7d35415\"}]",
+    "type": "Advocacy",
+    "highlights": "[{\"type\": \"Images\", \"value\": 4, \"id\": \"b9e40c1f-a1d6-4d9b-8a3f-fb7392839205\"}]",
+    "thumbnail": 4,
+    "date": "2020-07-10"
+  }
+},
+{
+  "model": "related_projects.related_projects",
+  "pk": 28,
+  "fields": {
+    "desc": "[{\"type\": \"Description\", \"value\": \"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\", \"id\": \"b84b8dd4-b86b-499a-8d3a-fb2d1b4d80a6\"}]",
+    "type": "Finance",
+    "highlights": "[{\"type\": \"Images\", \"value\": 25, \"id\": \"90cf94b5-060d-4944-abcd-8099172d9b66\"}, {\"type\": \"Images\", \"value\": 24, \"id\": \"8de7e2cc-70d6-4778-ba1f-6423f5808c6e\"}, {\"type\": \"Images\", \"value\": 23, \"id\": \"064386dc-ae9b-4d15-a150-a8ec50d0cde0\"}]",
+    "thumbnail": 23,
+    "date": "2020-07-10"
+  }
+},
+{
+  "model": "related_projects.related_projects",
+  "pk": 29,
+  "fields": {
+    "desc": "[{\"type\": \"Description\", \"value\": \"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\", \"id\": \"551dfa33-8a2b-4e27-b0d7-43e7a30f95ca\"}]",
+    "type": "Advocacy",
+    "highlights": "[{\"type\": \"Images\", \"value\": 24, \"id\": \"44712ffd-db62-4a13-bad7-494c75390d3d\"}]",
+    "thumbnail": 24,
+    "date": "2020-07-11"
+  }
+},
+{
+  "model": "related_projects.related_projects",
+  "pk": 30,
+  "fields": {
+    "desc": "[{\"type\": \"Description\", \"value\": \"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\", \"id\": \"d3412134-be04-4050-810a-615ab23bd476\"}]",
+    "type": "Finance",
+    "highlights": "[{\"type\": \"Images\", \"value\": 20, \"id\": \"5f57341a-6cec-4af7-a2bb-73f44c50ab54\"}, {\"type\": \"Images\", \"value\": 22, \"id\": \"131404b1-2a96-4afb-9c3b-66ed092fd247\"}]",
+    "thumbnail": 19,
+    "date": "2020-07-11"
+  }
+},
+{
+  "model": "related_projects.related_projects",
+  "pk": 31,
+  "fields": {
+    "desc": "[{\"type\": \"Description\", \"value\": \"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\", \"id\": \"88ed6a08-d704-4d2b-8a7d-e02125b3f740\"}]",
+    "type": "Advocacy",
+    "highlights": "[{\"type\": \"Images\", \"value\": 20, \"id\": \"3a167efe-d3c2-4889-b1ec-73f640b411be\"}, {\"type\": \"Images\", \"value\": 23, \"id\": \"b49e4459-600b-4bc5-bb72-5114e5e6eb31\"}]",
+    "thumbnail": 20,
+    "date": "2020-07-10"
+  }
+},
+{
+  "model": "related_projects.related_projects",
+  "pk": 32,
+  "fields": {
+    "desc": "[{\"type\": \"Description\", \"value\": \"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\", \"id\": \"c7902929-595d-467a-b210-8523ca8932a8\"}]",
+    "type": "Finance",
+    "highlights": "[{\"type\": \"Images\", \"value\": 25, \"id\": \"a6badbe3-bb61-4d41-bc87-e316c042b3ef\"}, {\"type\": \"Images\", \"value\": 24, \"id\": \"09f8a29f-3bb1-406a-b2f4-d3ca724c3f0a\"}, {\"type\": \"Images\", \"value\": 23, \"id\": \"6d25abf1-4554-4d2f-a228-87d0cdbf80aa\"}, {\"type\": \"Images\", \"value\": 22, \"id\": \"22dc06e2-5d33-4757-ba68-661614c76594\"}]",
+    "thumbnail": 21,
+    "date": "2020-07-11"
+  }
+},
+{
+  "model": "related_projects.related_projects",
+  "pk": 33,
+  "fields": {
+    "desc": "[{\"type\": \"Description\", \"value\": \"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\", \"id\": \"ff5dc05b-8aba-428d-8ba9-5f07e5e18c9a\"}]",
+    "type": "Advocacy",
+    "highlights": "[{\"type\": \"Images\", \"value\": 25, \"id\": \"60e203ee-1148-4342-931d-3c476d2ad7db\"}, {\"type\": \"Images\", \"value\": 24, \"id\": \"563d87bd-7cd7-47c3-91a4-53878b63507c\"}, {\"type\": \"Images\", \"value\": 23, \"id\": \"50dcfcfb-c6ef-4c69-b5b8-979c9a58ec53\"}]",
+    "thumbnail": 25,
+    "date": "2020-07-10"
+  }
+},
+{
+  "model": "related_projects.general_projects",
+  "pk": 21,
+  "fields": {
+    "desc": "[{\"type\": \"Description\", \"value\": \"<p>Our external projects tackle different issues faced by the sector, whether that be the lack of awareness, PWSN employment, or providing therapy services. All have the main goal of empowering the sector and building awareness in the community.</p>\", \"id\": \"7faeb9bb-df6e-4058-a308-eb2103138d9b\"}]"
+  }
+},
+{
+  "model": "our_partner_areas.ourpartnerareas",
+  "pk": 25,
+  "fields": {
+    "desc": "[{\"type\": \"Description\", \"value\": \"<p>In order to build a more intimate and personal relationship with the sector we serve and to holistically form our members, Ateneo SPEED conducts weekly area visits to our partner institutions.</p>\", \"id\": \"ed6c5bef-868a-4504-b29b-37664fbefc7e\"}]"
+  }
+},
+{
+  "model": "aboutpage.aboutpage",
+  "pk": 20,
+  "fields": {
+    "date": "2020-07-10",
+    "body": "[{\"type\": \"heading\", \"value\": \"<h2>About Ateneo SPEED</h2>\", \"id\": \"988400d5-08ab-4874-b92f-0b9cdea13182\"}, {\"type\": \"paragraph\", \"value\": \"<p>Ateneo Special Education Society (SPEED) is a Sector-based Cluster Organization of the Ateneo de Manila University. We aim to provide an inclusive society for persons with special needs (PWSNs), as well as embrace their value as human beings. To do so, SPEED collaborates with various institutions to create projects that promote the advocacy inside and outside the Ateneo community, while holistically forming our members and raising awareness in the Loyola Schools community. Since then, we have garnered many accomplishments, such as, Organization of the Year in 2011 and 2018.</p>\", \"id\": \"7203f826-e9bb-4e41-9a34-59d6e5fcee26\"}, {\"type\": \"heading\", \"value\": \"<h2>History</h2>\", \"id\": \"115a1ccf-b6e7-4639-959c-bc71654627ec\"}, {\"type\": \"paragraph\", \"value\": \"<p>We were conceptualized by freshmen back in 1993 who participated in a Leadership Program created by the Office of Student Activities. Our first area was The Child\\u2019s World, whose partnership was made possible by Jay Tan, who was one of its students and who eventually became SPEED\\u2019s first president. The organization began serving through area visits officially in 1994, and became an accredited organization in Ateneo with its first constitution and officers by 1996.</p>\", \"id\": \"46d1f232-9ebe-489b-bdea-facdddc51500\"}, {\"type\": \"heading\", \"value\": \"<h2>Our Mission</h2>\", \"id\": \"5bf21729-75da-44ed-a87f-740229a96c92\"}, {\"type\": \"paragraph\", \"value\": \"<p>As an organization that is geared towards building an inclusive society, we empower the special needs sector by collaborating with organizations and holistically forming our members as advocates of the special needs sector.</p>\", \"id\": \"80655a57-2adb-491e-adf6-e24bea990191\"}, {\"type\": \"heading\", \"value\": \"<h2>Core Competencies</h2>\", \"id\": \"eab87084-4b68-4624-be11-26b49859accf\"}, {\"type\": \"paragraph\", \"value\": \"<p>1. The empowerment of persons with special needs through collaborative projects.</p><p>2. Building awareness and advocating for the special needs sector</p>\", \"id\": \"cd7e2307-d6e6-4b3e-b7f5-95ac26846ec9\"}, {\"type\": \"heading\", \"value\": \"<h2>Core Values</h2>\", \"id\": \"de62035e-9c4e-4565-a686-8929b489d3fb\"}, {\"type\": \"paragraph\", \"value\": \"<p>The four colors of SPEED are symbolic of our core values and our vision-mission of an inclusive society. Red denotes the love we have for PWSNs, the love they show to us, and the love we desire people to show them. Orange symbolizes the acceptance of PWSNs as valuable members of our society. Yellow represents the happiness we want to bring to the PWSNs as they discover their own abilities and capabilities. Green signifies the personal growth that we experience as we learn more about PWSNS, the sector, and the advocacy.</p>\", \"id\": \"bf06bd67-c677-48df-b732-2192adc0a57d\"}, {\"type\": \"heading\", \"value\": \"<h2>Awards &amp; Accreditation</h2>\", \"id\": \"6b3c8d88-96b2-43ac-ac1d-3f55ca682e19\"}, {\"type\": \"paragraph\", \"value\": \"<p>Ten Accomplished Youth Organization, National Finalist, 2007</p><p>COA Project of the Year (Sparkle), 2009</p><p>COA Awards Executive Board of the Year, 2011</p><p>COA Awards Organization of the Year, 2011</p><p>Ten Accomplished Youth Organization Finalist, 2011</p><p>Project of the Year (SPEED Week), 2016</p><p>External Collaborative Effort of the Year (A Special Cafe), 2018</p><p>Project of the Year (A Special Cafe), 2018</p><p>Nation Building Project of the Year (Aspire), 2018</p><p>COA Awards Organization of the Year, 2018</p>\", \"id\": \"5cb6121e-7a85-4674-9002-72e7b94f8363\"}]"
+  }
+},
+{
+  "model": "contact.contactpage",
+  "pk": 26,
+  "fields": {
+    "to_address": "",
+    "from_address": "",
+    "subject": "",
+    "success": "",
+    "content": "[{\"type\": \"payment_details\", \"value\": \"<p>Donate to etc etc etc</p>\", \"id\": \"cb846a77-fd99-4c72-b1f2-ab96be951f92\"}]"
+  }
+},
+{
+  "model": "home.homepage",
+  "pk": 39,
+  "fields": {
+    "carousel": "[{\"type\": \"Images\", \"value\": 9, \"id\": \"4d95d89b-ff6c-42f2-a046-d36bf09e8623\"}, {\"type\": \"Images\", \"value\": 10, \"id\": \"1b245b4f-8c19-451b-9985-d3f7ebc8cc51\"}, {\"type\": \"Images\", \"value\": 11, \"id\": \"f779fa17-daa0-42a7-9b19-06b316cb8f8f\"}, {\"type\": \"Images\", \"value\": 12, \"id\": \"743c6330-1fd3-40bf-a321-978476cefe31\"}]",
+    "header": "Always for a more inclusive society",
+    "desc": "[{\"type\": \"Description\", \"value\": \"<p>Ateneo Special Education Society (SPEED) is a Sector-based Cluster of the Ateneo de Manila University. As a student-run organization, we aim to provide an inclusive society for persons with special needs, as well as embrace their value as human beings through our projects and by partnering with various institutions.</p>\", \"id\": \"fb4bb189-0d92-4234-b149-378da0b736a5\"}]",
+    "mission_desc": "[{\"type\": \"MissionDescription\", \"value\": \"<p>As an organization that is geared towards building an inclusive society, we empower the special needs sector by collaborating with organizations and holistically forming our members as advocates of the special needs sector.</p>\", \"id\": \"eb179f6a-3474-4c02-9ef6-0ffaa2f6b311\"}]",
+    "vision_desc": "[{\"type\": \"VisionDescription\", \"value\": \"<p>Our organization envisions an inclusive Philippines that provides persons with special needs an equitable means to live a quality life and an avenue to embrace their value as human beings.</p>\", \"id\": \"17919cd1-bebb-4826-809d-9ae464380d2e\"}]"
+  }
+}
+]

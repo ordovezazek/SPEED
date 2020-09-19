@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load wagtailimages_tags %}
+{% load wagtailcore_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	{% block extra_css %}
+			<link rel="stylesheet" href="{% static 'css/custom-projects.css'%}">
+	{% endblock %}
+
+</head>
+<body>
+
+	{% block navbar %}
+	{% endblock %}
+
+	<a href="#" class="btn-totop"></a>
+
+{% block header %}
+	<div class="header-container">
+		<!-- <img class="img-fluid" src="{% static 'images/projects/Main Header - Picture 1.jpg' %}"> -->
+		{% image page.background max-4500x4500 %}
+		<h2 id="header-text" style="color: #ffffff"> {{ page.title }} </h2>
+	</div>
+
+	<div class="row row-header d-flex align-items-center justify-content-center" id="row-projects">
+	<a href="{% slugurl 'home' %}">HOME</a>	&nbsp;> {{ page.title }}
+	</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid body-content">
+
+	<div class="row project-page-desc"> {{ page.desc }} </div>
+
+		{% for project in projects %}
+			{% if forloop.counter0|divisibleby:"2" %}
+				<div class="row">
+			{% endif %}
+					<div class="col-md-6 d-flex align-items-center justify-content-center" id="col-speedweek">
+						<a class="card" href="{% pageurl project %}">
+							<div class="card-img-caption d-flex align-items-center justify-content-center">
+								<p class="card-text">LEARN MORE</p>
+									<div class="img-wrapper">
+										<div class="overlay"> </div>
+											{% image project.thumbnail max-3000x500 %}
+									</div>
+							</div>
+						<div class="card-body font-weight-bold text-center">
+							{{ project.title }}
+						</div>
+					</a>
+				</div>
+			{% if forloop.counter0|add:"-1"|divisibleby:"2" and forloop.counter0 != 0 %}
+				</div>
+			{% endif %}
+	{% endfor %}
+</div>
+	{% if projects.paginator.count > 1 %}
+	<nav aria-label="Page navigation">
+	  <ul class="pagination justify-content-center">
+	  	{% if projects.has_previous %}
+		    <li class="page-item"><a class="page-link" href="?page={{ projects.previous_page_number }}{% if query %}&query={{ query|urlencode }}{% endif %}">Previous</a></li>
+	  	{% endif %}
+	  	{% for i in projects.paginator.page_range %}
+	  	    {% if projects.number == i %}
+			    <li class="page-item active"><a class="page-link" href="#">{{ i }}</a></li>
+	  	    {% else %}
+		    <li class="page-item"><a class="page-link" href="?page={{ i }}{% if query %}&query={{ query|urlencode }}{% endif %}">{{ i }}</a></li>
+	  	    {% endif %}
+		{% endfor %}
+		{% if projects.has_next %}
+		    <li class="page-item"><a class="page-link" href="?page={{ projects.next_page_number }}{% if query %}&query={{ query|urlencode }}{% endif %}">Next</a></li>
+		{% endif %}
+	  </ul>
+	</nav>
+	{% endif %}
+</div>
+{% endblock %}
+
+	{% block extra_js%}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="{% static 'js/bootstrap.js' %}"></script>
+	<script src="{% static 'js/jQuery.js' %}"></script>
+	<script src="{% static 'js/jQuery-projects.js' %}"></script>
+	{% endblock %}
+
+</body>
+</html>

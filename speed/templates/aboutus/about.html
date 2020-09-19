@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load wagtailcore_tags %}
+{% load static %}
+{% load wagtailimages_tags %}
+{% load wagtailcore_tags %}
+
+{% block extra_css %}
+		<link rel="stylesheet" href="{% static 'css/custom-about.css'%}">
+{% endblock %}
+
+{% block header %}
+
+	<div class="header-container">
+		<!-- <img class="img-fluid" {% image page.background fill-4500x4500 %}> -->
+		{% image page.background max-4500x4500 %}
+		<h3 id="header-text" style="color: #ffffff"> ABOUT US </h3>
+	</div>
+	<div class="row row-header d-flex align-items-center justify-content-center" id="row-about">
+		<a href="{% slugurl 'home' %}">HOME</a> &nbsp;> {{ page.title }}
+	</div>
+{% endblock %}
+
+	{% block content %}
+		<div class="container-fluid body-content">
+			{{ page.body }}
+		</div>
+	{% endblock %}
+
+	{% block extra_js%}
+		<script src="{% static 'js/jQuery-about.js' %}"></script>
+	{% endblock %}

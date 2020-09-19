@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{% load wagtailcore_tags %}
+{% load wagtailimages_tags %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/custom-about.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/custom-all.css'%}">
+{% endblock %}
+
+{% load static wagtailuserbar %}
+
+{% block content %}
+
+    <div>
+        <div>
+            <div class="header-container">
+                <!-- <img {% image page.background max-2000x2000 %} alt="main-header" class="pa-mainheader-pic"> -->
+                {% image page.background max-4500x4500 %}
+                <h3 id="header-text" style="color: #ffffff"> OUR PARTNER AREAS </h3>
+            </div>
+            <a href="#" class="btn-totop"></a>
+
+            <div class="pa-breadcrumb-nav">
+                <ul>
+                    <a href="{% slugurl 'home' %}"><li>HOME</li></a>
+                    <li>></li>
+                    <a href="#"><li>OUR PARTNER AREAS</li></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pa-grid-content">
+            <div class="pa-starter-text">
+                <p>{{ page.desc }}</p>
+            </div>
+
+<!-- ==================================== vv REPLICABLE CODE vv ===================================== -->
+
+          {% for iter in partner_areas %}
+
+            <div class="partner partner{{ forloop.counter }}" data-toggle="modal" data-target="#modal{{ forloop.counter }}">
+                <div class="partner-img-content">
+                    <div class="crop">
+                      {% image iter.partner.image width-960 as img %}
+                        <img src="{{ img.url }}" alt="{{ iter.partner.name }}">
+                    </div>
+                    <div class="overlay overlay-red">
+                        <div class="hover-text">
+                          <a href="#" id="modal-6">LEARN MORE</a></div>
+                    </div>
+                </div>
+                <h2 class="EC">{{ iter.partner.name }}</h2>
+            </div>
+
+          {% endfor %}
+
+<!-- ============================================= ^^  ^^ =============================================== -->
+
+            {% if partner_areas.paginator.count > 1 %}
+            <div class="pa-center-pagination">
+              <div class="pagination">
+                {% if partner_areas.has_previous %}
+                    <a href="?page={{ partner_areas.previous_page_number }}">Previous</a>
+                {% endif %}
+                {% for i in partner_areas.paginator.page_range %}
+                    {% if partner_areas.number == i %}
+                        <a class="active" href="#">{{ i }}</a>
+                    {% else %}
+                    <a href="?page={{ i }}">{{ i }}</a>
+                    {% endif %}
+                {% endfor %}
+                {% if partner_areas.has_next %}
+                    <a href="?page={{ partner_areas.next_page_number }}">Next</a>
+                {% endif %}
+              </div>
+            </div>
+            {% endif %}
+        </div>
+
+<!-- ==================================== vv REPLICABLE CODE vv ===================================== -->
+
+  {% for iter in partner_areas %}
+
+        <div class="modal bd-example-modal-lg" class="partner-modals" id="modal{{ forloop.counter }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+          <div class="modal-xl modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="pa-modal-content">
+                <span class="pa-close" data-dismiss="modal">&times;</span>
+                <h2>{{ iter.partner.name }}</h2>
+                <div class="pa-img-flex">
+                     {% image iter.partner.image width-960 as img %}
+                       <img src="{{ img.url }}" alt="{{ iter.partner.name }}">
+                       <img src="{{ img.url }}" alt="{{ iter.partner.name }}">
+                       <img src="{{ img.url }}" alt="{{ iter.partner.name }}">
+                </div>
+
+                {% if iter.partner.description %}
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis optio dolorem deserunt explicabo numquam illum repudiandae inventore, dignissimos nemo facere alias assumenda, porro perspiciatis voluptas iusto illo ratione nostrum at.</p>
+
+                {% endif %}
+
+                <div class="center-button">
+
+                    {% if iter.partner.link %}
+                    <a href="{{ iter.partner.link }}"><button class="pa-modal-button pa-modal-button-red">Partner URL</button></a>
+                    {% endif %}
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      {% endfor %}
+
+<!-- ============================================= ^^  ^^ =============================================== -->
+
+    </div>
+
+{% block extra_js %}
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+<script src="{% static 'js/jQuery-about.js' %}"></script>
+{% endblock %}
+
+{% endblock %}

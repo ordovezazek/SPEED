@@ -1,0 +1,112 @@
+<!--
+To-do:
+- responsiveness
+- navigational circles
+ -->
+{% extends 'base.html'%}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SPEED - About Us</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/custom-about.css">
+	<link rel="stylesheet" href="css/custom-all.css">
+</head>
+<body>
+	<a href="#" class="btn-totop"></a>
+
+  
+  {% block navbar %}
+  {% endblock %}
+
+
+{% block content %}
+
+		<div class="about circle active" onclick="goTo('#about');" id="about-nav">
+			<span class="nav-text active" id="about-text">ABOUT SPEED</span>
+		</div>
+		<div class="histo circle" onclick="goTo('#histo');" id="histo-nav">
+			<span class="nav-text inactive" id="histo-text">OUR HISTORY</span>
+		</div>
+		<div class="vm circle" onclick="goTo('#vm');" id="vm-nav">
+			<span class="nav-text inactive" id="vm-text">OUR VISION & MISSION</span>
+		</div>
+		<div class="comp circle" onclick="goTo('#comp');" id="comp-nav">
+			<span class="nav-text inactive" id="comp-text">OUR CORE COMPETENCIES</span>
+		</div>
+		<div class="values circle" onclick="goTo('#values');" id="values-nav">
+			<span class="nav-text inactive" id="values-text">OUR CORE VALUES</span>
+		</div>
+		<div class="awards circle" onclick="goTo('#awards');" id="awards-nav">
+			<span class="nav-text inactive" id="awards-text">AWARDS & ACCREDITATION</span>
+		</div>
+
+	<div class="header-container">
+		<img class="img-fluid" src="images/About Us Header - Picture 1.jpg">
+		<h3 id="header-text" style="color: #ffffff">ABOUT US</h3>
+	</div>
+
+	<div class="row row-header d-flex align-items-center justify-content-center" id="row-about">
+
+	<nav id="navbar-about">
+      	<a href="#about">About Us</a>
+				<a href="#histo">History</a>
+				<a href="#vm">Our Vision & Mission</a>
+        <a href="#comp">Core Competencies</a>
+        <a href="#values">Core Values</a>
+        <a href="#awards">Awards & Accreditation</a>
+      </nav>
+	</div>
+
+	<div class="container-fluid body-content">
+		<h2 id="about">About Ateneo SPEED</h2>
+		<p>Ateneo Special Education Society (SPEED) is a Sector-based Cluster Organization of the Ateneo de Manila University. We aim to provide an inclusive society for persons with special needs (PWSNs), as well as embrace their value as human beings. To do so, SPEED collaborates with various institutions to create projects that promote the advocacy inside and outside the Ateneo community, while holistically forming our members and raising awareness in the Loyola Schools community. Since then, we have garnered many accomplishments, such as, Organization of the Year in 2011 and 2018.</p>
+
+		<h2 id="histo">History</h2>
+		<p>We were conceptualized by freshmen back in 1993 who participated in a Leadership Program created by the Office of Student Activities. Our first area was The Child’s World, whose partnership was made possible by Jay Tan, who was one of its students and who eventually became SPEED’s first president. The organization began serving through area visits officially in 1994, and became an accredited organization in Ateneo with its first constitution and officers by 1996.</p>
+
+		<h2 id="vm">OUR VISION</h2>
+		<p>Our organization envisions an inclusive Philippines that provides persons with special needs an equitable means to live a quality life and an avenue to embrace their value as human beings.</p>
+
+		<h2 id="mission">OUR MISSION</h2>
+		<p>As an organization that is geared towards building an inclusive society, we empower the special needs sector by collaborating with organizations and holistically forming our members as advocates of the special needs sector.</p>
+
+		<h2 id="comp">CORE COMPETENCIES</h2>
+		<p>1. The empowerment of persons with special needs through collaborative projects
+		<br>
+		2. Building awareness and advocating for the special needs sector
+		</p>
+
+		<h2 id="values">CORE VALUES</h2>
+		<p>The four colors of SPEED are symbolic of our core values and our vision-mission of an inclusive society. Red denotes the <strong style="color: var(--red);">love</strong> we have for PWSNs, the love they show to us, and the love we desire people to show them. Orange symbolizes the <strong style="color: var(--orange);">acceptance</strong> of PWSNs as valuable members of our society. Yellow represents the <strong style="color: var(--yellow);">happiness</strong> we want to bring to the PWSNs as they discover their own abilities and capabilities. Green signifies the personal <strong style="color: var(--green);">growth</strong> that we experience as we learn more about PWSNS, the sector, and the advocacy. </p>
+
+		<h2 id="awards">AWARDS & ACCREDITATION</h2>
+		<ul id="awards-list">
+			<li>Ten Accomplished Youth Organization, National Finalist, <strong>2007</strong> </li>
+			<li>COA Project of the Year (Sparkle), <strong>2009</strong> </li>
+			<li>COA Awards Executive Board of the Year, <strong>2011</strong> </li>
+			<li>COA Awards Organization of the Year, <strong>2011</strong> </li>
+			<li>Ten Accomplished Youth Organization Finalist, <strong>2011</strong> </li>
+			<li>Project of the Year (SPEED Week), <strong>2016</strong> </li>
+			<li>External Collaborative Effort of the Year (A Special Cafe), <strong>2018</strong> </li>
+			<li>Project of the Year (A Special Cafe), <strong>2018</strong> </li>
+			<li>Nation Building Project of the Year (Aspire), <strong>2018</strong> </li>
+			<li>COA Awards Organization of the Year, <strong>2018</strong> </li>
+		</ul>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jQuery.js"></script>
+	<script src="js/jQuery-about.js"></script>
+{% endblock %}
+</body>
+</html>

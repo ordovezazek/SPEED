@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load wagtailcore_tags %}
+{% load static %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block content %}
+
+<div>
+    <div class="cs-header">
+      <img src="{% static 'images/Contact Us - Picture 7.jpg' %}" alt="main-header" class="cs-mainheader-pic">
+      <h2>contact us</h2>
+    </div>
+    <a href="#" class="btn-totop"></a>
+
+    <div class="cs-breadcrumb-nav">
+        <ul>
+            <a href="#"><li>HOME</li></a>
+            <li>></li>
+            <a href="#"><li>CONTACT US</li></a>
+        </ul>
+    </div>
+
+    <div class="cs-grid-content">
+        <div class="cs-tagline">
+            <h1>GET IN TOUCH WITH US!</h1>
+            <p>Send us a message if you want to know more about our projects, and how to contribute. Our communications team will get back to you as soon as possible.</p>
+        </div>
+
+        <div class="cs-content">
+          <div class="success_message" style="font-size: 5em; margin:230px 0 0 37%;">
+              {{ self.success|richtext }}
+          </div>
+        </div>
+
+        <div class="cs-footer-message">
+            <h1>DONATE VIA BANK DEPOSIT</h1>
+            <p>{{ page.content }}</p>
+        </div>
+
+        <div class="cs-footer">
+            <div class="cs-footer-item">
+                <img src="{% static 'images/socials/Location_Logo.png' %}">
+                <p class="l"> MVP 214 - <br> Manuel V. Pangilinan Center <br> for Student Leadership, <br> Ateneo de Manila Univesity, <br> Katipunan Avenue, Quezon City <br> Philippines</p>
+            </div>
+            <div class="cs-footer-item">
+                <a href="http://www.facebook.com/AteneoSPEED"><img src="{% static 'images/socials/Facebook_Logo.png' %}"></a>
+                <p class="f">facebook.com/AteneoSPEED</p>
+            </div>
+            <div class="cs-footer-item">
+                <a href="mailto:speed.ls@obf.ateneo.edu"><img src="{% static 'images/socials/mail.png' %}"></a>
+                <p class="m">speed.ls@obf.ateneo.edu</p>
+            </div>
+            <div class="cs-footer-item">
+                <a href="https://www.twitter.com/ateneospeed?lang=en"><img src="{% static 'images/socials/Twitter_Logo.png' %}"></a>
+                <p class="t">@AteneoSPEED</p>
+            </div>
+            <div class="cs-footer-item">
+                <a href="https://www.instagram.com/ateneospeed_/"><img src="{% static 'images/socials/Instagram_Logo.png' %}"></a>
+                <p class="i">@ateneospeed_</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

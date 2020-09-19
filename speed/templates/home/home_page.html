@@ -1,0 +1,209 @@
+{% extends 'base.html' %}
+{% load wagtailimages_tags wagtailcore_tags %}
+
+{% load static menus_tags %}
+{% get_menu "navigation-bar" as navigation %}
+
+{% load static %}
+
+    {% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/custom-landing.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/custom-all.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% endblock %}
+
+
+    {% block header %}
+    <a href="#" class="btn-totop"></a>
+    {% endblock %}
+
+    {% block content %}
+        <div id="carouselIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+          {% for block in page.carousel %}
+            <li data-target="#carouselIndicators" data-slide-to="{{ forloop.counter|add:"-1" }}" class="{% if forloop.counter == 1 %}active{% endif %}"></li>
+          {% endfor %}
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-caption">
+              <h5 class="carousel-header">{{ page.header }}</h5>
+              <p class="carousel-subheader">{{ page.desc }}</p>
+            </div>
+          {% for block in page.carousel %}
+          {% if forloop.counter == 1 %}
+            <div class="carousel-item active">
+            {% else %}
+            <div class="carousel-item">
+          {% endif %}
+              	{% image block.value width-5000%}
+              <div class="img-overlay" id="overlay-slide{{ forloop.counter }}"> </div>
+        </div>
+          {% endfor %}
+      </div>
+      </div>
+        <div class="container-fluid" id="div-vm">
+          <div class="row row-header d-flex align-items-center justify-content-center" id="row-vm">
+            OUR VISION & MISSION
+          </div>
+
+          <div class="row">
+            <div class="col-sm vision d-flex align-items-center justify-content-center">
+              <div class="img-overlay" id="overlay-vision"> </div>
+              <div class="col-content">
+                <h5><span style="color:var(--red);">O</span>UR <span style="color:var(--orange);">V</span>ISION</h5>
+                <p>{{ page.vision_desc }}</p>
+              </div>
+            </div>
+
+            <div class="col-sm mission d-flex align-items-center justify-content-center">
+              <div class="img-overlay" id="overlay-mission"> </div>
+              <div class="col-content">
+                <h5><span style="color:var(--green);">O</span>UR <span style="color:var(--yellow);">M</span>ISSION</h5>
+                <p> {{ page.mission_desc }}
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid font-weight-bold div-projects">
+          <div class="row row-header d-flex align-items-center justify-content-center" id="row-projects">
+              OUR PROJECTS
+          </div>
+        {% for project in projects %}
+        {% if forloop.counter0|divisibleby:"2" %}
+          <div class="row">
+        {% endif %}
+            <div class="col-md-6 d-flex align-items-center justify-content-center" id="col-speedweek">
+              <a class="card" href="{% pageurl project %}">
+                <div class="card-img-caption d-flex align-items-center justify-content-center">
+                  <p class="card-text">LEARN MORE</p>
+                    <div class="img-wrapper">
+                      <div class="overlay"> </div>
+                        {% image project.thumbnail max-3000x500 %}
+                    </div>
+                </div>
+              <div class="card-body font-weight-bold text-center">
+                {{ project.title }}
+              </div>
+            </a>
+          </div>
+        {% if forloop.counter0|add:"-1"|divisibleby:"2" and forloop.counter0 != 0 %}
+          </div>
+        {% endif %}
+        {% endfor %}
+        <div class="row d-flex align-items-center justify-content-center see-more" id="see-projects">   
+          <a href="{% pageurl get_projects %}" class="btn btn-warning btn-more">See All Projects</a>   
+        </div>
+      </div>
+    </div>
+
+
+
+  <div class="container-fluid div-partners">
+    <div class="row row-header d-flex align-items-center justify-content-center" id="row-partners"> OUR PARTNER AREAS </div>
+    {% for iter in partner_areas %}
+    {% if forloop.counter0|divisibleby:"2" %}
+      <div class="row">
+    {% endif %}
+        <div class="col-sm d-flex align-items-center justify-content-center card4">
+          <a class="card" href="{% pageurl get_partners %}">
+          <div class="card-img-caption d-flex align-items-center justify-content-center">
+            <p class="card-text">LEARN MORE</p>
+            <div class="img-wrapper">
+              <div class="overlay"> </div>
+              {% image iter.image width-960 %}
+            </div>
+          </div>
+          <div class="card-body text-center">
+            {{ iter.name }}
+          </div>
+        </a>
+        </div>
+    {% if forloop.counter0|add:"-1"|divisibleby:"2" and forloop.counter0 != 0 %}
+			</div>
+		{% endif %}
+    {% endfor %}
+    <div class="row d-flex align-items-center justify-content-center see-more" id="see-partners">
+      <a href="{% pageurl get_partners %}" class="btn btn-warning btn-more">See All Partner Areas</a>
+    </div>
+  </div>
+</div>
+    <div class="container-fluid">
+      <div class="row row-header d-flex align-items-center justify-content-center" id="row-partners">OUR STORIES</div>
+      <div class="article-grid">
+        {% for story in stories %}
+
+        <div class="article article-{{ forloop.counter }}">
+          <div class="ap-img-container">
+              {% image story.thumbnail max-320x200 %}
+              <div class="overlay ap-overlay">
+                  <div class="hover-text"> <a href="{% pageurl story %}">READ MORE</a></div>
+              </div>
+          </div>
+          <h2 class="a-head">{{ story.title }}</h2>
+          <p class="a-description">{{ story.introduction }}</p>
+          <h2 class="a-author">{{ story.author }}</h2>
+          <div class="a-footer-flex">
+              <p class="a-type">{{ story.type }}</p>
+              <p class="a-date">{{ story.date }}</p>
+          </div>
+      </div>
+      {% endfor %}
+      </div>
+      <div class="row d-flex align-items-center justify-content-center see-more" id="see-partners">
+        <a href="{% pageurl get_stories %}" class="btn btn-warning btn-more">See All Stories</a>
+      </div>
+      <div class="row row-header d-flex align-items-center justify-content-center" id="row-partners">JOIN US IN BUILDING A MORE INCLUSIVE SOCIETY!</div>
+      <div class="contact-us-flex">
+        <div class="contact-us-img">
+          <div class="crop-2"><img src="{% static 'images/Contact Us - Picture 7.jpg' %}" alt=""></div>
+        </div>
+        <div class="contact-us">
+         <div class="center-img"><img src="{% static 'images/SPEEDLogo2019_whiteoutline.png' %}" alt="" srcset=""></div>
+          <h2>ATENEO SPECIAL <br> EDUCATION SOCIETY</h2>
+          <div class="ml-3">
+            <p class="contact-us-subheader">CONTACT US</p>
+            <p>
+              In Ateneo Speed Education Society (SPEED), we believe that our vision and mission of creating a more inclusive
+              society is one that cannot be achieved alone. Contact us or follow us on our platforms to learn more about our
+              different initiatives and find ways to help us in building a more inclusive Philippines.
+            </p>
+          </div>
+          <div class="icons-flex justify-content-center mb-3">
+            <a href="mailto:speed.ls@obf.ateneo.edu"><img src="{% static 'images/socials/Email Icon.png' %}" alt=""></a>
+            <a href="https://www.facebook.com/AteneoSPEED/"><img src="{% static 'images/socials/Facebook Icon.png' %}" alt=""></a>
+            <a href="https://www.twitter.com/ateneospeed?lang=en"><img src="{% static 'images/socials/Twitter Icon.png' %}" alt=""></a>
+            <a href="https://www.instagram.com/ateneospeed_/"><img src="{% static 'images/socials/Instagram Icon.png' %}" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="row row-header" id="row-last"> </div>
+      </div>
+
+      {% endblock %}
+
+{% block extra_js%}
+        <script>
+          $.each([0, 4, 8, 12], (_, n) => {
+            $('.overlay').eq(n).css("backgroundColor", "var(--red");;
+            $('.card-body').eq(n).css("color", "var(--red");
+          });
+
+          $.each([1, 5, 9], (_, n) => {
+            $('.overlay').eq(n).css("backgroundColor", "var(--orange");;
+            $('.card-body').eq(n).css("color", "var(--orange");
+          });
+
+          $.each([2, 6, 10], (_, n) => {
+            $('.overlay').eq(n).css("backgroundColor", "var(--yellow");;
+            $('.card-body').eq(n).css("color", "var(--yellow");
+          });
+
+          $.each([3, 7, 11], (_, n) => {
+            $('.overlay').eq(n).css("backgroundColor", "var(--green");;
+            $('.card-body').eq(n).css("color", "var(--green");
+          });
+        </script>
+
+{% endblock %}

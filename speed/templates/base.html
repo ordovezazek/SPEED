@@ -1,40 +1,85 @@
-{% load static wagtailuserbar %}
+{% load static wagtailuserbar menus_tags %}
+{% load wagtailcore_tags %}
+{% get_menu "navigation-bar" as navigation %}
+
+{% load static %}
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>
-            {% block title %}
-                {% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}
-            {% endblock %}
-            {% block title_suffix %}
-                {% with self.get_site.site_name as site_name %}
-                    {% if site_name %}- {{ site_name }}{% endif %}
-                {% endwith %}
-            {% endblock %}
-        </title>
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {# Global stylesheets #}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/speed.css' %}">
+  <head>
+    <link rel="icon" href="{% static 'images/SPEEDLogo2019_whiteoutline.png' %}" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        {% block extra_css %}
-            {# Override this in templates to add extra stylesheets #}
+    <title>
+        {% block title %}
+            {% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}
         {% endblock %}
-    </head>
-
-    <body class="{% block body_class %}{% endblock %}">
-        {% wagtailuserbar %}
-
-        {% block content %}{% endblock %}
-
-        {# Global javascript #}
-        <script type="text/javascript" src="{% static 'js/speed.js' %}"></script>
-
-        {% block extra_js %}
-            {# Override this in templates to add extra javascript #}
+        {% block title_suffix %}
+            {% with self.get_site.site_name as site_name %}
+                {% if site_name %}- {{ site_name }}{% endif %}
+            {% endwith %}
         {% endblock %}
-    </body>
+    </title>
+
+    {# Global stylesheets #}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/custom-all.css'%}">
+
+    {% block extra_css %}
+        {# Override this in templates to add extra stylesheets #}
+    {% endblock %}
+  </head>
+
+  <body class="{% block body_class %}{% endblock %}">
+    <nav class="navbar fixed-top navbar-expand-xl">
+      <div class="container-fluid">
+      <a class="navbar-brand d-inline-flex  justify-content-center align-items-center" href="{% slugurl 'home' %}">
+        {% load static %}
+          <img id="brand-logo" src= "{% static 'images/SPEEDLogo2019_whiteoutline.png' %}" width="70" height="70" class="d-inline-block" alt="">
+        <h5 class="mb-0">ATENEO SPECIAL <br> EDUCATION SOCIETY </h5>
+      </a>
+
+        <button class="navbar-toggler d-lg-block d-xl-none" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <div class="navbar-nav mr-auto">
+
+            {% for item in navigation.menu_items.all %}
+
+            <a class="nav-item nav-link" href="{{ item.link }}" {% if item.open_in_new_tab %} target="_blank" {% endif %}>{{ item.title }}</a>
+
+            {% endfor %}
+
+        </div>
+        <div class="navbar-nav ml-auto font-weight-bold navbar-right">
+          <a class="nav-item nav-link mr-2" id="nav-contact" style="background-color:#9ec93f;" href="{% slugurl 'contact-us' %}">Contact Us</a>
+          <!-- <a class="nav-item nav-link" id="nav-involve" style="background-color:var(--orange); margin: 0 5px;" href="#">Get Involved</a> -->
+        </div>
+      </div>
+    </div>
+    </nav>
+
+      {% block header %}
+      {% endblock %}
+
+      {% block content %}
+      {% endblock %}
+
+
+    {# Global javascript #}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/jQuery.js' %}"></script>
+    {% block extra_js %}
+      {# Override this in templates to add extra javascript #}
+    {% endblock %}
+  </body>
 </html>

@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% load wagtailcore_tags %}
+{% load wagtailimages_tags %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/custom-project.css'%}">
+{% endblock %}
+{% block header %}
+<div class="header-container">
+  {% load static %}
+  <!-- <img class="img-fluid" src="{% static 'images/About Us Header - Picture 1.jpg' %}"> -->
+  {% image page.background max-4500x4500 %}
+  <h2 id="header-text" style="color: #ffffff" class="project-var"> {{ page.title }} </h2>
+</div>
+<div class="row row-header d-flex align-items-center justify-content-center mx-0" id="row-project">
+  <a href="{% slugurl 'home' %}">HOME</a>&nbsp;>&nbsp;<a href="{% slugurl 'our-projects' %}">OUR PROJECTS</a>&nbsp; > &nbsp; <span class="project-var"> {{ page.title }} </span>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container-fluid body-content">
+  <div class="project-details">
+    <div class="project-header">
+      <div class="project-name project-var"> {{ page.title }} </div>
+      <div class="project-type"> {{ page.type }} </div>
+    </div>
+    <span class="project-desc-header"> PROJECT DESCRIPTION </span>
+    <div class="project-desc">
+      {{ page.desc }}
+    </div>
+  </div>
+  <!-- HIGHLIGHTS -->
+  <div class="row row-header d-flex align-items-center justify-content-center" id="row-high"> PROJECT HIGHLIGHTS </div>
+  <div class="container-fluid">
+    <div id="carouselExampleControls" class="carousel slide high" data-ride="carousel" data-interval="false">
+      <div class="carousel-controls">
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="carousel-inner carousel-high">
+        {% for block in page.highlights %}
+        {% if forloop.counter0|divisibleby:"4" %}
+        {% if forloop.counter0 == 0 %}
+        <div class="carousel-item active">
+          {% else %}
+          <div class="carousel-item">
+            {% endif %}
+            {% endif %}
+
+            {% if forloop.counter0|add:"-3"|divisibleby:"4" %}
+            <div class="row justify-content-center align-middle">
+              <div class="large-img-wrapper">
+                {% else %}
+                {% if forloop.counter0|divisibleby:"4" %}
+                <div class="row">
+                  {% endif %}
+                  <div class="col">
+                    {% endif %}
+                    <div class="modal fade" id="modal{{forloop.counter0 }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body mb-0 p-0">
+                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                              <div class="embed-responsive-item" allowfullscreen>
+                                {% image block.value width-400 %}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="image {% if forloop.counter0|add:'-3'|divisibleby:'4' %}large-img{% else %}d-block w-100{% endif %}" data-toggle="modal" data-target="#modal{{forloop.counter0 }}">
+                      {% image block.value width-400 %}
+                    </div>
+                  </div>
+                  {% if forloop.counter0 != 0 %}
+                  {% if forloop.counter0|divisibleby:"4" or forloop.counter0|add:"-3"|divisibleby:"4" %}
+                </div>
+                {% endif %}
+                {% endif %}
+                {% if forloop.counter0|divisibleby:"4" and forloop.counter0 != 0 %}
+              </div>
+              {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% if stories %}
+      <!-- STORIES -->
+      <div class="row row-header d-flex align-items-center justify-content-center" id="row-stories"> PROJECT STORIES </div>
+      <div class="row stories">
+        {% for story in stories %}
+        {% if story %}
+          <div class="col-md">
+            <a href="{% pageurl story %}">
+            <div class="card h-100">
+              <div class="card-img-caption d-flex align-items-center justify-content-center">
+                <div class="img-wrapper">
+                  <div class="overlay"> </div>
+                  <div class="card-img-top">
+                    {% image story.thumbnail height-236 %}
+                  </div>
+                  <!-- <img class="card-img-top" src="{% static 'images/Main Header - Picture 4.jpg' %}" alt=""> -->
+                </div>
+              </div>
+              <div class="card-body text-center" style="color:black;">
+                <h5 class="card-title story-title text-uppercase h5">{{ story.title }}</h5>
+                <p class="card-text story-desc">
+                  {{ story.introduction }}
+                </p>
+                <h5 class="card-title story-author text-uppercase h6">{{ story.author }}</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item story-date">
+                  <div class="row" style="color:black">
+                    <div class="col type">{% if story.type %}{{ story.type }}{% else %}Article{% endif %}</div>
+                    <div class="col date">{{ story.date }}</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </a>
+          </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <nav aria-label="Page navigation">
+      <ul class="pagination justify-content-center">
+        {% if stories.has_previous %}
+        <li class="page-item"><a class="page-link" href="?page={{ stories.previous_page_number }}">Previous</a></li>
+        {% endif %}
+        {% for i in stories.paginator.page_range %}
+        {% if stories.number == i %}
+        <li class="page-item active"><a class="page-link" href="#">{{ i }}</a></li>
+        {% else %}
+        <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+        {% endif %}
+        {% endfor %}
+        {% if stories.has_next %}
+        <li class="page-item"><a class="page-link" href="?page={{ stories.next_page_number }}">Next</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+    {% endif %}
+    </div>
+    <div class="row row-header d-flex align-items-center justify-content-center" id="row-contact"> CONTACT US <br> Learn how you can get involved! </div>
+    <div class="row">
+      <div class="container-fluid contact-content">
+        <div class="icon-wrapper face">
+          <a href=""><img src="{% static 'images/socials/Email Icon.png' %}"></a>
+        </div>
+        <div class="icon-wrapper face">
+          <a href="https://www.facebook.com/AteneoSPEED"><img src="{% static 'images/socials/Facebook Icon.png' %}"></a>
+        </div>
+        <div class="icon-wrapper twit">
+          <a href=" https://twitter.com/AteneoSPEED"><img src="{% static 'images/socials/Twitter Icon.png' %}"></a>
+        </div>
+        <div class="icon-wrapper insta">
+          <a href="https://www.instagram.com/ateneospeed"><img src="{% static 'images/socials/Instagram Icon.png' %}"></a>
+        </div>
+      </div>
+    </div>
+
+    {% endblock %}
+
+    {% block extra_js%}
+  	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    {% load static %}
+    <script src="{% static 'js/jQuery-project.js' %}"></script>
+    {% endblock %}

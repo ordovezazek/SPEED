@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load wagtailimages_tags %}
+{% load wagtailcore_tags %}
+{% load static %}
+
+    {% block extra_css %}
+      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/custom-all.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/custom-about.css'%}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% endblock %}
+
+  {% block header %}
+      <div class="header-container">
+      <!-- <div class="header-container"> -->
+        <!-- <img {% image page.background max-3000x3000 %} alt="main-header" class="cs-mainheader-pic"> -->
+        {% image page.background max-4500x4500 %}
+        <h3 id="header-text" style="color: #ffffff"> OUR STORIES </h3>
+      </div>
+        <a href="#" class="btn-totop"></a>
+  {% endblock %}
+
+{% block content %}
+        <div class="ap-breadcrumb-nav">
+            <ul>
+                <a href="{% slugurl 'home' %}"><li>HOME</li></a>
+                <li>></li>
+                <a href="#"><li>OUR STORIES</li></a>
+            </ul>
+        </div>
+
+        <div class="ap-grid-content">
+            <div class="ap-starter-text">
+                <p>{{ page.desc }}</p>
+            </div>
+
+            <div class="ap-searchbar">
+                <p>Looking for a particular article? Search here.</p>
+                <div class="ap-search-container">
+                    <form action="#">
+                      <input placeholder="Search..." name="search" class="ap-round-search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            {% for story in stories %}
+            <div class="article article-{{ forloop.counter }}">
+                <div class="ap-img-container">
+                    {% image story.thumbnail max-3000x500 %}
+                    <div class="overlay ap-overlay">
+                        <div class="hover-text"> <a href="{% pageurl story %}">READ MORE</a></div>
+                    </div>
+                </div>
+                <h2 class="a-head">{{ story.title }}</h2>
+                <p class="a-description">{{ story.introduction }}</p>
+                <h2 class="a-author">{{ story.author }}</h2>
+                <div class="a-footer-flex">
+                    <p class="a-type">{{ story.type }}</p>
+                    <p class="a-date">{{ story.date }}</p>
+                </div>
+            </div>
+            {% endfor %}
+
+            {% if stories.paginator.count > 1 %}
+            <div class="ap-center">
+                <div class="pagination">
+                  {% if stories.has_previous %}
+                    <a href="?page={{ stories.previous_page_number }}{% if query %}&search={{ query|urlencode }}{% endif %}">Previous</a>
+                    {% endif %}
+                    {% for i in stories.paginator.page_range %}
+              	  	    {% if stories.number == i %}
+                    <a href="#" class="active">{{ i }}</a>
+                        {% else %}
+                    <a href="?page={{ i }}{% if query %}&search={{ query|urlencode }}{% endif %}">{{ i }}</a>
+                        {% endif %}
+                    {% endfor %}
+                    {% if stories.has_next %}
+                    <a href="?page={{ stories.next_page_number }}{% if query %}&search={{ query|urlencode }}{% endif %}">Next</a>
+                    {% endif %}
+                </div>
+            </div>
+          {% endif %}
+
+        </div>
+
+    </div>
+{% endblock %}
+
+{% block extra_js%}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/jQuery.js' %}"></script>
+<script src="{% static 'js/jQuery-about.js' %}"></script>
+{% endblock %}
